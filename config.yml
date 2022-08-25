@@ -1,0 +1,27 @@
+language: en
+
+pipeline:
+- name: SpacyNLP
+  model: en_core_web_md
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: DIETClassifier
+  epochs: 100
+  number_of_transformer_layers: 5
+  constrain_similarities: true
+- name: EntitySynonymMapper
+- name: LexicalSyntacticFeaturizer
+- name: FallbackClassifier
+  threshold: 0.55
+policies:
+#- name: TwoStageFallbackPolicy
+- name: MemoizationPolicy
+- name: RulePolicy
+  core_fallback_threshold: 0.4
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: True
+- name: TEDPolicy
+  max_history: 50
+  evaluate_every_number_of_epochs: 3
+  epochs: 15

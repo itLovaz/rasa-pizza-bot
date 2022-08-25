@@ -1,0 +1,112 @@
+version: "2.0"
+
+rules:
+
+- rule: avoid rules if ask change order deroutes
+  steps:
+  - action: action_ask_change_order
+  - or:
+    - intent: function_not_implemented
+    - intent: out_of_scope
+    - intent: need_explanation
+    - intent: greet
+    - intent: goodbye
+    - intent: affirm
+    - intent: deny
+    - intent: features
+    - intent: begin_order
+    - intent: choose_store
+    - intent: ask_menu
+    - intent: ask_another_menu
+    - intent: stop
+    - intent: get_updates
+    - intent: cancel_order
+    - intent: change_order
+  - action: action_summary
+
+- rule: function not implemented
+  steps:
+  - intent: function_not_implemented
+  - action: utter_function_not_implemented
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_ask_rephrase
+
+- rule: Give user explanation about current step
+  condition:
+  - slot_was_set: [ current_step ]
+  steps:
+  - intent: need_explanation
+  - action: action_explain
+
+# - rule: Implementation of the Two-Stage-Fallback
+#   steps:
+#   - intent: nlu_fallback
+#   - action: action_two_stage_fallback
+#   - active_loop: action_two_stage_fallback
+
+
+- rule: Greet when user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- rule: Say the features when the user asks
+  steps:
+  - intent: features
+  - action: utter_features
+
+- rule: Tell the stores when the user want to order
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  
+- rule: Show the menu when the user ask for
+  steps:
+  - or:
+    - intent: ask_menu
+    - intent: ask_another_menu
+  - action: action_show_menu
+
+# HELPHELP - contraddiction with story 'User choose pizzas not available in the menu'
+# - rule: Ask if the user need something else after choosing some pizzas
+#   condition:
+#   - slot_was_set: [ store ]
+#   steps:
+#   - intent: choose_pizza
+#   - action: action_fix_pizzas_choice
+#   - action: action_ask_something_more
+
+- rule: Gives user updates about the orders
+  condition:
+  - slot_was_set: [ orders ]
+  steps:
+  - intent: get_updates
+  - action: action_get_updates
+
+- rule: Ask for confirmation if the user wants to cancel an order
+  condition:
+  - slot_was_set: [ orders ]
+  steps:
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+
+- rule: Ask what need to be changed
+  steps:
+  - intent: change_order
+  - action: action_ask_change_order
+  
