@@ -1,0 +1,226 @@
+Can you make it large?
+Can you make it small?
+Can you make it big?
+Can you make it bigger?
+Can you add burrata?
+Can I add an ingredient?
+Can I pick it up?
+I want to pick it up.
+I want to collect the order.
+Can you add?
+Can you remove an ingredient?
+Can you remove the vegetables?
+Can you remove them?
+Can you remove?
+Can I add toppings?
+Can I add a topping?
+Can I remove toppings?
+Can I remove a topping?
+SKIP
+why?
+why you need that?
+what are you going to do that?
+will you sell my data?
+that's a privacy violation!
+why you want to know that?
+why?
+why you want it?
+why you want to know?
+will you send spam to me?
+will you send me spam?
+SKIP
+hey
+hello
+hi
+hello there
+good morning
+good evening
+moin
+hey there
+let's go
+hey dude
+goodmorning
+goodevening
+good afternoon
+SKIP
+good afternoon
+cu
+good by
+cee you later
+good night
+bye
+goodbye
+have a nice day
+see you around
+bye bye
+see you later
+SKIP
+yes
+y
+indeed
+of course
+that sounds good
+correct
+ok
+k
+sure
+fine
+go for it
+definitely
+perfect
+great
+SKIP
+no
+n
+nope
+nine
+negative
+never
+I don't think so
+don't like that
+no way
+not really
+correct
+no that's all
+i am good, keep going
+next step
+that's good
+that's all thanks
+that's it
+continue
+let's continue
+no thanks
+that's all
+no
+nope
+no i'm good
+i'm good let's continue
+no now i'm good
+no the other
+no that's it
+that's all thanks
+no let's continue
+no that's all
+SKIP
+help
+need help
+help me
+what can you do
+how can i order
+what are you
+hey, can i order?
+help me
+what can you do?
+SKIP
+i want pizza
+order pizza
+make an order
+pizza
+buy pizza
+deliver pizza
+i want to order pizza
+i want to eat pizza
+what are the stores?
+show me other restaurants
+show other restaurants
+other restaurants
+i want to order
+make another order
+can i order a pizza?
+i want to order a pizza for tonight
+i want to order pizza
+i would like order a pizza
+hi, i would like to order two pizzas
+i would like eat a pizza tonight, is it possible?
+please, tell me the stores again
+i want to see the menu of other shops
+i want to see other menus
+SKIP
+show me the menu
+menu
+give me the menu
+i need the menu
+do you have a menu?
+is there a menu?
+which pizzas can I order?
+menu
+i need to add another pizza
+show menu
+show the menu please
+show me the menu
+what's on the menu
+i would like the menu
+i want the menu
+tell me the menu
+SKIP
+where is my order
+where are the pizzas
+are the pizzas ready
+when will the order arrive
+when will it arrive
+when will the pizzas arrive
+where is it
+give me updates
+what's the status
+are they coming
+when will they arrive
+where is my order?
+where is my order
+where are the pizzas?
+check the status of my order
+update me
+when it will arrive?
+i want update about my order
+SKIP
+cancel my order
+i want to cancel the order
+delete order
+cancel
+abort mission
+i changed my mind
+i don't want pizza anymore
+i am not hungry anymore
+cancel my last order
+cancel it
+cancel the second order
+cancel the order from domino's
+i want to cancel my order, is it too late?
+i changed my mind
+cancel my order
+SKIP
+change my order
+i want to change the order
+change order
+modify my order
+i want to modify the order
+modify order
+change it
+wait i want something else
+change my order
+i forgot a pizza, i would like to add another pizza
+SKIP
+i would like something to drink
+do you have drinks?
+do you have beer?
+is there a drink menu?
+can i order drinks?
+is there something to drink?
+do you have drinks?
+SKIP
+What is Margherita?
+What is American?
+What's pepperoni with?
+What does spicy buffalo has?
+What are the ingredient of Veggie?
+SKIP
+what are the Vegan options?
+tell me the Vegetarian options?
+is there anything spicy?
+is there a vegetarian menu?
+which one are vegetarians?
+SKIP
+how much is it for a Pepperoni?
+what is the cost of american?
+how much is it for the beer?
+how much is it for the coca?
+how much does it cost?

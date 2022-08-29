@@ -1,0 +1,3676 @@
+PHRASE: Can you make it large?
+
+CONTEXTUAL
+can you make that back?
+if you make one large?
+can you use yours large?
+can there make me large?
+can harry make himself large?
+SYNONYM
+Can you crap information technology large?
+Bum you make it gravid?
+Can you make it magnanimous?
+Can you defecate it large?
+Can you form information technology large?
+
+#############################################################
+
+PHRASE: Can you make it small?
+
+CONTEXTUAL
+can you make me so?
+can you put it okay?
+can you believe us small?
+must you be it small?
+how anybody make it small?
+SYNONYM
+Seat you take it small?
+Buns you make it small?
+Can you stimulate it minor?
+Backside you make it small?
+Bum you make it modest?
+
+#############################################################
+
+PHRASE: Can you make it big?
+
+CONTEXTUAL
+can you make something together?
+can you make her better?
+can you give us big?
+and you say it big?
+can you do me big?
+SYNONYM
+Can you produce it big?
+Can you take information technology big?
+Can you pretend it large?
+Bum you make it big?
+Can you make information technology vainglorious?
+
+#############################################################
+
+PHRASE: Can you make it bigger?
+
+CONTEXTUAL
+will you make me bigger?
+can you make that okay?
+can someone make it faster?
+can george change it bigger?
+do you have it bigger?
+SYNONYM
+Can you get information technology bigger?
+Can you make information technology bad?
+Can you make information technology larger?
+Can you make information technology crowing?
+Can you make it freehanded?
+
+#############################################################
+
+PHRASE: Can you add burrata?
+
+CONTEXTUAL
+can he add one?
+can you tell that?
+can ya add more?
+let you add soap?
+might you add ice?
+SYNONYM
+Displace you add up burrata?
+Backside you add burrata?
+Lav you add burrata?
+Fire you add together burrata?
+Can you add burrata?
+
+#############################################################
+
+PHRASE: Can I add an ingredient?
+
+CONTEXTUAL
+can he add an update?
+can she add an orgasm?
+can she add my ingredient?
+can i find an answer?
+might i add an idea?
+SYNONYM
+Can I add together an element?
+Displace I supply an ingredient?
+John I lend an ingredient?
+Can I summate an constituent?
+Can Ane add an element?
+
+#############################################################
+
+PHRASE: Can I pick it up?
+
+CONTEXTUAL
+can we pick it later?
+can she send it up?
+will i pick ya up?
+can i pick your open?
+maybe it pick it up?
+SYNONYM
+Sack I pick it upward?
+Butt I pick it upwardly?
+Can Ace peck it up?
+Can I nibble information technology up?
+Can I peck information technology up?
+
+#############################################################
+
+PHRASE: I want to pick it up.
+
+CONTEXTUAL
+i want tae help ethan up.
+please want to know it now.
+just want to pull them up.
+claire needed to get it up.
+she stop or pick it up.
+SYNONYM
+Ane need to pick it up.
+Iodine want to pick it improving.
+I require to pick it upwards.
+One require to pick information technology up.
+I desire to cull information technology up.
+
+#############################################################
+
+PHRASE: I want to collect the order.
+
+CONTEXTUAL
+i suggest you collect its order.
+people hurry to collect the food.
+i want and place my order.
+i want as collect any card.
+i had to get your order.
+SYNONYM
+I need to pile up the parliamentary law.
+I require to amass the order.
+I desire to collect the social club.
+Iodine require to collect the club.
+One want to garner the order.
+
+#############################################################
+
+PHRASE: Can you add?
+
+CONTEXTUAL
+and anyone add?
+can she drive?
+what they add?
+and you hear?
+can it feel?
+SYNONYM
+Can you tot up?
+Can you append?
+Hind end you add?
+Prat you bring?
+Can you add together?
+
+#############################################################
+
+PHRASE: Can you remove an ingredient?
+
+CONTEXTUAL
+can you make an image?
+can she remove an image?
+did one remove an ingredient?
+helped you identify an ingredient?
+can i pick an ingredient?
+SYNONYM
+Throne you remove an ingredient?
+Fanny you slay an ingredient?
+Can you get rid of an ingredient?
+Fundament you remove an ingredient?
+Can you remove an fixings?
+
+#############################################################
+
+PHRASE: Can you remove the vegetables?
+
+CONTEXTUAL
+can you hear his vegetables?
+can anyone remove the sword?
+shall you remove her vegetables?
+can we help the vegetables?
+can you buy your vegetables?
+SYNONYM
+Force out you take out the vegetables?
+Fanny you remove the vegetable?
+Canful you remove the vegetable?
+Can you withdraw the vegetable?
+Tin can you get rid of the vegetables?
+
+#############################################################
+
+PHRASE: Can you remove them?
+
+CONTEXTUAL
+can he find them?
+can seth see them?
+how you leave them?
+can he control them?
+can me beat them?
+SYNONYM
+Can you take away them?
+Privy you remove them?
+Can you remove them?
+Butt you remove them?
+Can you remove them?
+
+#############################################################
+
+PHRASE: Can you remove?
+
+CONTEXTUAL
+can they fly?
+can he walk?
+what you see?
+help us remove?
+do she remove?
+SYNONYM
+Can you take?
+Tin you hit?
+Can you absent?
+Dismiss you remove?
+Hind end you remove?
+
+#############################################################
+
+PHRASE: Can I add toppings?
+
+CONTEXTUAL
+can he add words?
+can he have toppings?
+will i add something?
+can you add some?
+can they add anything?
+SYNONYM
+Ass One add toppings?
+Send away I append toppings?
+Can One add topping?
+Dismiss 1 add toppings?
+Toilet I summate toppings?
+
+#############################################################
+
+PHRASE: Can I add a topping?
+
+CONTEXTUAL
+can ye find a topping?
+can you find a topping?
+can i add the spell?
+can they add a hint?
+can i add in little?
+SYNONYM
+Tin can Atomic number 53 add a topping?
+Displace I add a topping?
+Commode Ane add a topping?
+Stool I add together a topping?
+Tin One add a topping?
+
+#############################################################
+
+PHRASE: Can I remove toppings?
+
+CONTEXTUAL
+can you remove them?
+can anyone try toppings?
+may i remove they?
+can anyone remove this?
+must i remove him?
+SYNONYM
+Can Ane move out toppings?
+Ass I take away toppings?
+Can Iodine slay toppings?
+Can I withdraw topping?
+Can Unity remove topping?
+
+#############################################################
+
+PHRASE: Can I remove a topping?
+
+CONTEXTUAL
+can he remove a marker?
+can john grab a topping?
+can i suggest some topping?
+might i borrow a topping?
+dare i order a topping?
+SYNONYM
+Can Single remove a topping?
+Hindquarters One remove a topping?
+Tail end I dispatch a topping?
+Can One remove a topping?
+Hind end I remove a topping?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: why?
+
+CONTEXTUAL
+god?
+where?
+hello?
+where?
+huh?
+SYNONYM
+wherefore?
+wherefore?
+wherefore?
+wherefore?
+wherefore?
+
+#############################################################
+
+PHRASE: why you need that?
+
+CONTEXTUAL
+he should need that?
+because you want that?
+should you need him?
+did you need help?
+why should think that?
+SYNONYM
+why you postulate that?
+wherefore you need that?
+why you want that?
+wherefore you need that?
+wherefore you demand that?
+
+#############################################################
+
+PHRASE: what are you going to do that?
+
+CONTEXTUAL
+what are you making on call that?
+where are you going to tell mom?
+what three guys going ta do that?
+what were you ready to do next?
+what are i supposed to make that?
+SYNONYM
+what be you going to do that?
+what embody you live on to behave that?
+what be you pop off to do that?
+what comprise you survive to do that?
+what are you sound to do that?
+
+#############################################################
+
+PHRASE: will you sell my data?
+
+CONTEXTUAL
+would you sell my things?
+will you sell this estate?
+can you sell my shop?
+will it sell the data?
+will ben sell the data?
+SYNONYM
+will you sell my data?
+will you betray my data point?
+leave you betray my data?
+volition you betray my data?
+will you sell my data point?
+
+#############################################################
+
+PHRASE: that's a privacy violation!
+
+CONTEXTUAL
+better'n a privacy issue!
+everything's a basic requirement!
+that'is a defense policy!
+that's no big issue!
+this's not privacy joke!
+SYNONYM
+that ' s a secrecy infringement!
+that ' s a concealment encroachment!
+that ' s a concealment ravishment!
+that ' s a concealment intrusion!
+that ' s a secrecy infringement!
+
+#############################################################
+
+PHRASE: why you want to know that?
+
+CONTEXTUAL
+were you wanting to risk that?
+did you want me know this?
+why not want i know it?
+he did want not know that?
+why i want you know me?
+SYNONYM
+why you want to eff that?
+wherefore you want to make love that?
+wherefore you want to know that?
+wherefore you want to have sex that?
+wherefore you want to make out that?
+
+#############################################################
+
+PHRASE: why?
+
+CONTEXTUAL
+who?
+right?
+now?
+say?
+what?
+SYNONYM
+wherefore?
+wherefore?
+wherefore?
+wherefore?
+wherefore?
+
+#############################################################
+
+PHRASE: why you want it?
+
+CONTEXTUAL
+why ye like it?
+how you did it?
+why you call him?
+will you like it?
+as you want revenge?
+SYNONYM
+why you need it?
+wherefore you want information technology?
+wherefore you want it?
+wherefore you want it?
+wherefore you require it?
+
+#############################################################
+
+PHRASE: why you want to know?
+
+CONTEXTUAL
+why you afraid to learn?
+why to want not know?
+because you needed to know?
+because you want to help?
+why for want to hide?
+SYNONYM
+wherefore you want to know?
+why you want to get laid?
+wherefore you want to do it?
+wherefore you want to know?
+why you need to bed?
+
+#############################################################
+
+PHRASE: will you send spam to me?
+
+CONTEXTUAL
+did london send spam to parliament?
+could you return those to me?
+will anyone send it to her?
+will you cut spam at them?
+do you send her to earth?
+SYNONYM
+will you send junk e mail to me?
+testament you send spam to pine tree state?
+bequeath you send junk e mail to me?
+volition you send junk e mail to maine?
+testament you send spam to maine?
+
+#############################################################
+
+PHRASE: will you send me spam?
+
+CONTEXTUAL
+did you send them there?
+could you find me back?
+will we send it below?
+would you let you spam?
+let it send you spam?
+SYNONYM
+will you mail pine tree state spam?
+testament you direct me spam?
+will you send me spam?
+bequeath you send maine spam?
+volition you send pine tree state spam?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: hey
+
+CONTEXTUAL
+b
+...
+。
+pro
+et
+SYNONYM
+hey
+hey
+hey
+hey
+hey
+
+#############################################################
+
+PHRASE: hello
+
+CONTEXTUAL
+e
+॥
+g
+to
+c
+SYNONYM
+hullo
+how do you do
+hi
+hi
+howdy
+
+#############################################################
+
+PHRASE: hi
+
+CONTEXTUAL
+f
+and
+r
+product
+...
+SYNONYM
+hawai'i
+how do you do
+aloha state
+how do you do
+hawaii
+
+#############################################################
+
+PHRASE: hello there
+
+CONTEXTUAL
+hello now
+hello [UNK]
+hello a
+was there
+almost there
+SYNONYM
+hello thither
+hello on that point
+hello in that respect
+hello in that respect
+howdy there
+
+#############################################################
+
+PHRASE: good morning
+
+CONTEXTUAL
+good thing
+thursday morning
+good ॥
+good but
+good thing
+SYNONYM
+good dayspring
+good daybreak
+good forenoon
+serious morning
+good dawn
+
+#############################################################
+
+PHRASE: good evening
+
+CONTEXTUAL
+saturday evening
+good things
+good because
+good day
+good things
+SYNONYM
+good eve
+good eventide
+good eventide
+adept evening
+unspoilt evening
+
+#############################################################
+
+PHRASE: moin
+
+CONTEXTUAL
+॥
+from
+and
+g
+x
+SYNONYM
+moin
+moin
+moin
+moin
+moin
+
+#############################################################
+
+PHRASE: hey there
+
+CONTEXTUAL
+out there
+hey why
+almost there
+then there
+and there
+SYNONYM
+hey at that place
+hey at that place
+hey there
+hey there
+hey in that respect
+
+#############################################################
+
+PHRASE: let's go
+
+CONTEXTUAL
+devil's hope
+ma'be go
+men's eat
+let'k...
+leave'im go
+SYNONYM
+army of the righteous ' s run
+lashkar e toiba ' s fail
+army of the righteous ' sulphur go
+let ' reciprocal ohm lead
+lashkar e tayyiba ' sulfur go
+
+#############################################################
+
+PHRASE: hey dude
+
+CONTEXTUAL
+poor dude
+hey boy
+hey...
+hey what
+hey girl
+SYNONYM
+hey swell
+hey fellow
+hey dude
+hey dude
+hey dude
+
+#############################################################
+
+PHRASE: goodmorning
+
+CONTEXTUAL
+e
+...
+pro
+।
+p
+SYNONYM
+goodmorning
+goodmorning
+goodmorning
+goodmorning
+goodmorning
+
+#############################################################
+
+PHRASE: goodevening
+
+CONTEXTUAL
+line
+॥
+॥
+...
+a
+SYNONYM
+goodevening
+goodevening
+goodevening
+goodevening
+goodevening
+
+#############################################################
+
+PHRASE: good afternoon
+
+CONTEXTUAL
+early afternoon
+monday afternoon
+early afternoon
+good goddamn
+good ॥
+SYNONYM
+serious afternoon
+in effect afternoon
+good good afternoon
+good good afternoon
+good good afternoon
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: good afternoon
+
+CONTEXTUAL
+friday afternoon
+good ॥
+this afternoon
+the afternoon
+friday afternoon
+SYNONYM
+well afternoon
+good good afternoon
+dependable afternoon
+good good afternoon
+safe afternoon
+
+#############################################################
+
+PHRASE: cu
+
+CONTEXTUAL
+॥
+m
+and
+h
+c
+SYNONYM
+copper
+atomic number 29
+atomic number 29
+copper
+copper
+
+#############################################################
+
+PHRASE: good by
+
+CONTEXTUAL
+good and
+provided by
+good her
+recorded by
+described by
+SYNONYM
+good by
+honorable by
+good by
+good by
+secure by
+
+#############################################################
+
+PHRASE: cee you later
+
+CONTEXTUAL
+will you da
+cee company...
+thank you ।
+or met later
+cee ni na
+SYNONYM
+cee you later
+cee you later
+cee you later
+cee you subsequently
+cee you later
+
+#############################################################
+
+PHRASE: good night
+
+CONTEXTUAL
+good...
+all night
+one night
+early night
+good student
+SYNONYM
+good nox
+good nighttime
+proficient night
+good nox
+ripe night
+
+#############################################################
+
+PHRASE: bye
+
+CONTEXTUAL
+br
+defaulted
+p
+let
+t
+SYNONYM
+good bye
+adieu
+good by
+so long
+auf wiedersehen
+
+#############################################################
+
+PHRASE: goodbye
+
+CONTEXTUAL
+in
+et
+।
+t
+c
+SYNONYM
+arrivederci
+bye bye
+adieu
+cheerio
+good by
+
+#############################################################
+
+PHRASE: have a nice day
+
+CONTEXTUAL
+has a great day
+have some big day
+having some nice day
+have your good day
+such a nice go
+SYNONYM
+have a squeamish sidereal day
+deliver a nice twenty four hour period
+get a nice daytime
+get a decent day
+hold a overnice day
+
+#############################################################
+
+PHRASE: see you around
+
+CONTEXTUAL
+see you...
+love you around
+see ye around
+catch you around
+meet you around
+SYNONYM
+take in you around
+check you around
+see you around
+see you around
+see you around
+
+#############################################################
+
+PHRASE: bye bye
+
+CONTEXTUAL
+[UNK] bye
+bye...
+good bye
+bye ॥
+bye...
+SYNONYM
+bye pass
+bye so long
+bye bye bye
+good day bye
+bye bye bye
+
+#############################################################
+
+PHRASE: see you later
+
+CONTEXTUAL
+see you sometime
+see above later
+see for later
+see you you
+see again later
+SYNONYM
+see you afterward
+realise you later
+see you later
+figure you later
+see you afterwards
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: yes
+
+CONTEXTUAL
+x
+e
+॥
+refrain
+e
+SYNONYM
+yes
+yes
+yes
+yes
+yes
+
+#############################################################
+
+PHRASE: y
+
+CONTEXTUAL
+e
+s
+...
+on
+but
+SYNONYM
+atomic number 39
+atomic number 39
+yttrium
+atomic number 39
+wye
+
+#############################################################
+
+PHRASE: indeed
+
+CONTEXTUAL
+[UNK]
+e
+॥
+source
+by
+SYNONYM
+so
+so
+so
+so
+so
+
+#############################################################
+
+PHRASE: of course
+
+CONTEXTUAL
+of her
+the course
+of §
+a course
+of §
+SYNONYM
+of class
+of form
+of course of action
+of grade
+of course
+
+#############################################################
+
+PHRASE: that sounds good
+
+CONTEXTUAL
+that feeling good
+that said good
+that feels good
+that was good
+that said good
+SYNONYM
+that sounds good
+that sounds good
+that sounds salutary
+that sound good
+that vocalise good
+
+#############################################################
+
+PHRASE: correct
+
+CONTEXTUAL
+b
+॥
+a
+g
+a
+SYNONYM
+correct
+correct
+correct
+correct
+correct
+
+#############################################################
+
+PHRASE: ok
+
+CONTEXTUAL
+refrain
+source
+॥
+and
+c
+SYNONYM
+okeh
+sooner state
+okay
+sooner state
+okay
+
+#############################################################
+
+PHRASE: k
+
+CONTEXTUAL
+b
+[UNK]
+b
+defaulted
+...
+SYNONYM
+kb
+g
+kb
+cat valium
+kb
+
+#############################################################
+
+PHRASE: sure
+
+CONTEXTUAL
+source
+।
+p
+1
+t
+SYNONYM
+sure
+sure
+sure
+sure
+sure
+
+#############################################################
+
+PHRASE: fine
+
+CONTEXTUAL
+dot
+॥
+because
+a
+c
+SYNONYM
+amercement
+amercement
+mulct
+mulct
+mulct
+
+#############################################################
+
+PHRASE: go for it
+
+CONTEXTUAL
+go for time
+go through it
+run for it
+go see it
+go off it
+SYNONYM
+go for information technology
+work for it
+go for it
+go for it
+go for information technology
+
+#############################################################
+
+PHRASE: definitely
+
+CONTEXTUAL
+c
+e
+reference
+॥
+and
+SYNONYM
+emphatically
+emphatically
+emphatically
+in spades
+decidedly
+
+#############################################################
+
+PHRASE: perfect
+
+CONTEXTUAL
+a
+।
+ref
+[UNK]
+॥
+SYNONYM
+perfective tense
+perfect tense
+perfective
+perfective
+perfective
+
+#############################################################
+
+PHRASE: great
+
+CONTEXTUAL
+p
+e
+defaulted
+।
+and
+SYNONYM
+swell
+outstanding
+big
+nifty
+corking
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: no
+
+CONTEXTUAL
+x
+...
+e
+।
+form
+SYNONYM
+no
+no
+no
+no
+no
+
+#############################################################
+
+PHRASE: n
+
+CONTEXTUAL
+f
+g
+e
+b
+on
+SYNONYM
+nitrogen
+northward
+nitrogen
+atomic number 7
+normality
+
+#############################################################
+
+PHRASE: nope
+
+CONTEXTUAL
+on
+the
+from
+to
+a
+SYNONYM
+nope
+nope
+nope
+nope
+nope
+
+#############################################################
+
+PHRASE: nine
+
+CONTEXTUAL
+c
+e
+।
+line
+।
+SYNONYM
+ball club
+ix
+ennead
+9
+niner
+
+#############################################################
+
+PHRASE: negative
+
+CONTEXTUAL
+b
+...
+source
+e
+...
+SYNONYM
+negatively charged
+damaging
+disconfirming
+negatively charged
+disconfirming
+
+#############################################################
+
+PHRASE: never
+
+CONTEXTUAL
+and
+॥
+in
+।
+b
+SYNONYM
+ne'er
+ne'er
+ne'er
+ne'er
+ne'er
+
+#############################################################
+
+PHRASE: I don't think so
+
+CONTEXTUAL
+i don'm think know
+and don't feel so
+just don'think think so
+i can't care so
+i shouldn't think if
+SYNONYM
+Iodin don ' t reckon so
+Single get into ' t think so
+I assume ' t think so
+I don ' t think therefore
+I don ' t call back and so
+
+#############################################################
+
+PHRASE: don't like that
+
+CONTEXTUAL
+don'a do that
+come'n like that
+don'it like they
+don'start ask that
+shan't joke that
+SYNONYM
+don river ' triiodothyronine like that
+don ' mt similar that
+father ' t same that
+father ' t alike that
+don river ' thymine like that
+
+#############################################################
+
+PHRASE: no way
+
+CONTEXTUAL
+which way
+either way
+no please
+other way
+her way
+SYNONYM
+no agency
+no mode
+no fashion
+no fashion
+no path
+
+#############################################################
+
+PHRASE: not really
+
+CONTEXTUAL
+not anything
+in really
+and really
+do really
+not dare
+SYNONYM
+not very
+not in truth
+non really
+non really
+not rattling
+
+#############################################################
+
+PHRASE: correct
+
+CONTEXTUAL
+...
+।
+on
+॥
+...
+SYNONYM
+correct
+correct
+correct
+correct
+correct
+
+#############################################################
+
+PHRASE: no that's all
+
+CONTEXTUAL
+no do'y all
+no doctor's...
+no that're none
+no woman's never
+no that'm why
+SYNONYM
+no that ' s all
+no that ' s all
+no that ' s all
+no that ' s all
+no that ' s all
+
+#############################################################
+
+PHRASE: i am good, keep going
+
+CONTEXTUAL
+always know good, keep going
+in am good, keep...
+i felt right, keep going
+ii am good, for going
+boys do good, keep going
+SYNONYM
+i be dependable, keep going
+i be good, keep go
+i be respectable, keep going
+i am practiced, proceed going
+single be good, keep going
+
+#############################################################
+
+PHRASE: next step
+
+CONTEXTUAL
+every step
+next comes
+a step
+next ।
+next...
+SYNONYM
+next stride
+side by side step
+succeeding step
+next whole tone
+following step
+
+#############################################################
+
+PHRASE: that's good
+
+CONTEXTUAL
+that'a all
+there's what
+jared's not
+that'tis how
+t'a good
+SYNONYM
+that ' s salutary
+that ' s dear
+that ' s ripe
+that ' s honest
+that ' s undecomposed
+
+#############################################################
+
+PHRASE: that's all thanks
+
+CONTEXTUAL
+let's all...
+j'a all thanks
+that'll all so
+that's partly why
+that'for two thanks
+SYNONYM
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+
+#############################################################
+
+PHRASE: that's it
+
+CONTEXTUAL
+the's...
+she's when
+that'm...
+mom's right
+that'is why
+SYNONYM
+that ' s information technology
+that ' s information technology
+that ' s information technology
+that ' s information technology
+that ' s information technology
+
+#############################################################
+
+PHRASE: continue
+
+CONTEXTUAL
+and
+e
+to
+...
+with
+SYNONYM
+continue
+continue
+continue
+continue
+continue
+
+#############################################################
+
+PHRASE: let's continue
+
+CONTEXTUAL
+didn't continue
+gotta's go
+leo's take
+there's hear
+everybody's fight
+SYNONYM
+army of the righteous ' s proceed
+army of the righteous ' entropy continue
+let ' due south keep
+let ' sulfur cover
+let ' southward carry on
+
+#############################################################
+
+PHRASE: no thanks
+
+CONTEXTUAL
+no...
+oh thanks
+no more
+no ।
+ok thanks
+SYNONYM
+no thanks
+no thanks
+no thanks
+no thanks
+no thanks
+
+#############################################################
+
+PHRASE: that's all
+
+CONTEXTUAL
+time's like
+dat's exactly
+nothin'is all
+that'and...
+that'm so
+SYNONYM
+that ' s all
+that ' s all
+that ' s all
+that ' s all
+that ' s all
+
+#############################################################
+
+PHRASE: no
+
+CONTEXTUAL
+e
+h
+e
+f
+c
+SYNONYM
+no
+no
+no
+no
+no
+
+#############################################################
+
+PHRASE: nope
+
+CONTEXTUAL
+·
+x
+form
+defaulted
+॥
+SYNONYM
+nope
+nope
+nope
+nope
+nope
+
+#############################################################
+
+PHRASE: no i'm good
+
+CONTEXTUAL
+because i'm but
+no you'b good
+so it'm good
+no i'am no
+you so'm good
+SYNONYM
+no unity ' thousand good
+no i ' mebibyte goodness
+no i ' g goodness
+no i ' yard goodness
+no atomic number 53 ' m commodity
+
+#############################################################
+
+PHRASE: i'm good let's continue
+
+CONTEXTUAL
+an'be good let's...
+i'e good young'r continue
+t'm good we'l continue
+she'm an let'en continue
+somethin'an good let's start
+SYNONYM
+i ' m in effect let ' mho proceed
+unity ' m full let ' s continue
+i ' m good lashkar e toiba ' entropy uphold
+iodin ' m sound let ' s proceed
+i ' m good lashkar e tayyiba ' s retain
+
+#############################################################
+
+PHRASE: no now i'm good
+
+CONTEXTUAL
+no way i's good
+no now you've good
+right now i'mb good
+no no we'm good
+no but i'm back
+SYNONYM
+no now i ' m upright
+no now i ' m effective
+no at once i ' m good
+no today i ' m good
+no today i ' m good
+
+#############################################################
+
+PHRASE: no the other
+
+CONTEXTUAL
+no small other
+from the other
+in the other
+only the other
+on the other
+SYNONYM
+no the former
+no the early
+no the former
+no the former
+no the early
+
+#############################################################
+
+PHRASE: no that's it
+
+CONTEXTUAL
+no wonder'tis it
+no more'sec it
+no that'right...
+no it's because
+no here's nobody
+SYNONYM
+no that ' s information technology
+no that ' s information technology
+no that ' s it
+no that ' s it
+no that ' s it
+
+#############################################################
+
+PHRASE: that's all thanks
+
+CONTEXTUAL
+that'a my thanks
+that'im all...
+that's done today
+that's stupid stuff
+that's one up
+SYNONYM
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+that ' s all thanks
+
+#############################################################
+
+PHRASE: no let's continue
+
+CONTEXTUAL
+or let'bout continue
+neither one's continue
+no victor's win
+no one's go
+and let's make
+SYNONYM
+no lashkar e toiba ' second continue
+no let ' due south keep on
+no lashkar e tayyiba ' entropy continue
+no lashkar e tayyiba ' due south continue
+no let ' sulfur go on
+
+#############################################################
+
+PHRASE: no that's all
+
+CONTEXTUAL
+guess that's true
+our demon's all
+even that's funny
+no m'm all
+oh that's nothing
+SYNONYM
+no that ' s all
+no that ' s all
+no that ' s all
+no that ' s all
+no that ' s all
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: help
+
+CONTEXTUAL
+as
+e
+e
+a
+r
+SYNONYM
+assistance
+aid
+supporter
+assistance
+aid
+
+#############################################################
+
+PHRASE: need help
+
+CONTEXTUAL
+need...
+need f
+need on
+need but
+need ।
+SYNONYM
+need assistance
+need avail
+need aid
+need assistant
+want help
+
+#############################################################
+
+PHRASE: help me
+
+CONTEXTUAL
+help cause
+make me
+help you
+eat me
+give me
+SYNONYM
+facilitate me
+facilitate me
+help maine
+help oneself me
+help pine tree state
+
+#############################################################
+
+PHRASE: what can you do
+
+CONTEXTUAL
+than can you say
+so can you than
+what happened it do
+what can she survive
+how can you i
+SYNONYM
+what can you answer
+what tail end you do
+what sack you do
+what stern you do
+what terminate you perform
+
+#############################################################
+
+PHRASE: how can i order
+
+CONTEXTUAL
+so dare i order
+and can i...
+how do i...
+why can i time
+how could i have
+SYNONYM
+how hindquarters i order
+how can i order of magnitude
+how dismiss i social club
+how can i order
+how seat i order
+
+#############################################################
+
+PHRASE: what are you
+
+CONTEXTUAL
+what are [UNK]
+what are ？
+what were you
+what makes you
+what do you
+SYNONYM
+what embody you
+what be you
+what are you
+what embody you
+what are you
+
+#############################################################
+
+PHRASE: hey, can i order?
+
+CONTEXTUAL
+honey, can us order?
+dad, can i pass?
+wait, can they order?
+hey, can you visit?
+hey, must i play?
+SYNONYM
+hey, can i fiat?
+hey, rear end i ordering?
+hey, bathroom i order?
+hey, can buoy i order?
+hey, can i club?
+
+#############################################################
+
+PHRASE: help me
+
+CONTEXTUAL
+ask me
+help be
+help not
+save me
+answer me
+SYNONYM
+help pine tree state
+help maine
+help maine
+avail me
+help maine
+
+#############################################################
+
+PHRASE: what can you do?
+
+CONTEXTUAL
+what should everybody do?
+she made you do?
+who can you say?
+why does you do?
+what did they do?
+SYNONYM
+what throne you serve?
+what canful you do?
+what fundament you serve?
+what potty you answer?
+what can you do?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: i want pizza
+
+CONTEXTUAL
+i want him
+i want you
+i want control
+so want pizza
+but want pizza
+SYNONYM
+ace want pizza
+i want pizza pie
+i need pizza
+i require pizza
+unity want pizza
+
+#############################################################
+
+PHRASE: order pizza
+
+CONTEXTUAL
+order no
+order under
+order ।
+order ॥
+order under
+SYNONYM
+order pizza pie
+order pizza pie
+order pizza pie
+order pizza pie
+guild pizza
+
+#############################################################
+
+PHRASE: make an order
+
+CONTEXTUAL
+without an order
+make an a
+make an impression
+make this order
+make an x
+SYNONYM
+make an order of magnitude
+make an ordination
+make an rescript
+make an lodge
+get an order
+
+#############################################################
+
+PHRASE: pizza
+
+CONTEXTUAL
+...
+॥
+t
+is
+f
+SYNONYM
+pizza pie
+pizza pie
+pizza pie
+pizza pie
+pizza pie
+
+#############################################################
+
+PHRASE: buy pizza
+
+CONTEXTUAL
+maybe pizza
+dog pizza
+roast pizza
+cheese pizza
+a pizza
+SYNONYM
+buy pizza pie
+buy pizza pie
+bribe pizza
+buy pizza pie
+buy pizza pie
+
+#############################################################
+
+PHRASE: deliver pizza
+
+CONTEXTUAL
+morning pizza
+deliver you
+deliver ॥
+deliver me
+deliver from
+SYNONYM
+deliver pizza
+deliver pizza
+deliver pizza
+deliver pizza pie
+deliver pizza pie
+
+#############################################################
+
+PHRASE: i want to order pizza
+
+CONTEXTUAL
+i want only hear pizza
+in want to order want
+i came to order ।
+i want this order from
+i second time order pizza
+SYNONYM
+iodin need to order pizza
+unity want to order pizza
+unity want to order pizza pie
+ace want to club pizza
+i require to purchase order pizza
+
+#############################################################
+
+PHRASE: i want to eat pizza
+
+CONTEXTUAL
+i wanted to enjoy pizza
+i nod my eat pizza
+i want to stay ।
+just want him eat pizza
+i tried to eat right
+SYNONYM
+i require to eat pizza pie
+i want to use up pizza pie
+ace need to eat pizza
+single want to eat pizza
+i want to eat on pizza
+
+#############################################################
+
+PHRASE: what are the stores?
+
+CONTEXTUAL
+what of the chances?
+but are the terms?
+there are other stores?
+some are his stores?
+what are our details?
+SYNONYM
+what be the stores?
+what be the memory board?
+what constitute the storage?
+what make up the stores?
+what embody the stores?
+
+#############################################################
+
+PHRASE: show me other restaurants
+
+CONTEXTUAL
+works in other restaurants
+show the other room
+name me other ।
+show everybody my restaurants
+show me you god
+SYNONYM
+read me other eatery
+show maine other restaurant
+register me early restaurants
+demonstrate me other eatery
+picture me other restaurant
+
+#############################################################
+
+PHRASE: show other restaurants
+
+CONTEXTUAL
+show other ।
+multiple other restaurants
+five other restaurants
+numerous other restaurants
+show other records
+SYNONYM
+show other eatery
+display other restaurants
+show other eating house
+appearance other restaurants
+show other eatery
+
+#############################################################
+
+PHRASE: other restaurants
+
+CONTEXTUAL
+both restaurants
+other is
+and restaurants
+6 restaurants
+many restaurants
+SYNONYM
+other eatery
+other eating house
+other eating house
+former restaurants
+other eating house
+
+#############################################################
+
+PHRASE: i want to order
+
+CONTEXTUAL
+just want to and
+you want... order
+i want too her
+he want my order
+and want to because
+SYNONYM
+iodin require to order
+i need to order
+i want to ordering
+i need to order
+one want to order
+
+#############################################################
+
+PHRASE: make another order
+
+CONTEXTUAL
+or another order
+made another order
+make this order
+make another ॥
+make this order
+SYNONYM
+pee another order
+gain another order
+progress to another order
+stool another order
+make another decree
+
+#############################################################
+
+PHRASE: can i order a pizza?
+
+CONTEXTUAL
+can she order that pizza?
+can i bring a third?
+can i try a coffee?
+can they order your pizza?
+may i get a pizza?
+SYNONYM
+can i edict a pizza pie?
+rump i order a pizza pie?
+can i edict a pizza?
+rear end i holy order a pizza?
+can i orderliness a pizza pie?
+
+#############################################################
+
+PHRASE: i want to order a pizza for tonight
+
+CONTEXTUAL
+we want to find a menu for tonight
+i plans to order a dvd... tonight
+i want to demand a pizza from him
+i opened a order a pizza for mom
+should want to order a pizza by her
+SYNONYM
+i require to guild a pizza for tonight
+i require to holy order a pizza pie for tonight
+i require to edict a pizza pie for tonight
+one need to order a pizza for tonight
+i require to society a pizza for tonight
+
+#############################################################
+
+PHRASE: i want to order pizza
+
+CONTEXTUAL
+we want to eat pizza
+i take another order pizza
+i want another promise pizza
+i loved to order because
+we want to order to
+SYNONYM
+i want to order pizza pie
+i need to order pizza pie
+i want to orderliness pizza pie
+i require to order pizza
+i require to order pizza
+
+#############################################################
+
+PHRASE: i would like order a pizza
+
+CONTEXTUAL
+i would like order without good
+i still never order a pizza
+he would like order with pizza
+i actually like order more pizza
+most would like such a pizza
+SYNONYM
+iodine would like order a pizza
+i would like guild a pizza pie
+one would like order a pizza
+i would care order a pizza
+i would care lodge a pizza
+
+#############################################################
+
+PHRASE: hi, i would like to order two pizzas
+
+CONTEXTUAL
+besides, leo would like to order your pizzas
+usually, people especially like to order two pizzas
+well, i would like someone order two but
+hi, mike would like your order two but
+so, i just like to order in pizzas
+SYNONYM
+hi, i would like to order 2 pizzas
+hi, i would like to rules of order two pizza pie
+hi, i would like to guild 2 pizzas
+howdy, i would wish to order two pizzas
+hi, i would like to order two pizzas
+
+#############################################################
+
+PHRASE: i would like eat a pizza tonight, is it possible?
+
+CONTEXTUAL
+i would like with our pizza then, is it settled?
+i would get the cold pizza tonight, is which possible?
+it would hardly eat a peach tonight, are it possible?
+i very like your everything vegetarian tonight, is it possible?
+i would rather eat a little tonight, be dat possible?
+SYNONYM
+atomic number 53 would like use up a pizza pie tonight, is it possible?
+single would like run through a pizza tonight, is it possible?
+one would care eat a pizza pie tonight, is information technology possible?
+unity would like consume a pizza tonight, is information technology potential?
+unity would like eat a pizza pie tonight, is it possible?
+
+#############################################################
+
+PHRASE: please, tell me the stores again
+
+CONTEXTUAL
+then, take me about stores again
+please, teaching me the basics like
+please, tel me your story again
+dad, tell you the stores ।
+yes, tell me... same again
+SYNONYM
+please, separate maine the stores again
+please, enjoin me the stores once again
+please, secern me the entrepot again
+please, evidence me the store over again
+please, state me the stores over again
+
+#############################################################
+
+PHRASE: i want to see the menu of other shops
+
+CONTEXTUAL
+children want to see different windows of other shops
+i to never see this menu of other shops
+i want the see the menu about other men
+i want actually see the hundreds of coffee shops
+please check to see the menu of the shops
+SYNONYM
+1 need to see the menu of other shops
+i want to see the bill of fare of early shops
+i desire to see the menu of other workshop
+iodine want to see the menu of other shops
+i want to see the carte of other shop class
+
+#############################################################
+
+PHRASE: i want to see other menus
+
+CONTEXTUAL
+never want but read other menus
+we want and see the menus
+i glance at see other one
+they wanted to see our menus
+i might wanna know other menus
+SYNONYM
+i want to see early menus
+i want to ascertain other menus
+iodin want to see other menus
+i want to picture other menus
+i want to see other menu
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: show me the menu
+
+CONTEXTUAL
+call me that menu
+promise me that menu
+show me their prize
+show everyone his menu
+text me the castle
+SYNONYM
+demo maine the menu
+establish me the card
+evince me the card
+express pine tree state the menu
+show maine the fare
+
+#############################################################
+
+PHRASE: menu
+
+CONTEXTUAL
+॥
+c
+w
+b
+r
+SYNONYM
+carte du jour
+card
+computer menu
+bill of fare
+carte du jour
+
+#############################################################
+
+PHRASE: give me the menu
+
+CONTEXTUAL
+give everyone their menu
+give martha some menu
+give us your menu
+feed him the menu
+give them the kiss
+SYNONYM
+open me the carte
+feed maine the menu
+present me the bill of fare
+give pine tree state the fare
+pay maine the menu
+
+#############################################################
+
+PHRASE: i need the menu
+
+CONTEXTUAL
+i like the out
+who need the first
+i check office menu
+i want school menu
+i need his red
+SYNONYM
+atomic number 53 need the card
+unity take the menu
+unity need the card
+i require the carte
+ace postulate the menu
+
+#############################################################
+
+PHRASE: do you have a menu?
+
+CONTEXTUAL
+do he have a problem?
+do he remember a menu?
+perhaps you require a menu?
+do you have any boyfriend?
+do she have a gun?
+SYNONYM
+do you make a menu?
+do you get a menu?
+suffice you have a computer menu?
+make you have a menu?
+execute you have a carte?
+
+#############################################################
+
+PHRASE: is there a menu?
+
+CONTEXTUAL
+is that my menu?
+is that a clue?
+is there some connection?
+is this the menu?
+is everything your menu?
+SYNONYM
+be in that respect a menu?
+constitute at that place a menu?
+is in that location a computer menu?
+be there a carte?
+embody there a computer menu?
+
+#############################################################
+
+PHRASE: which pizzas can I order?
+
+CONTEXTUAL
+what pizzas can us grab?
+new kind can i bring?
+other pizzas can people want?
+which drinks do guys order?
+which route can they take?
+SYNONYM
+which pizza pie can I order?
+which pizza pie pot I order?
+which pizzas lav I order?
+which pizzas commode I order?
+which pizzas lavatory Unity order?
+
+#############################################################
+
+PHRASE: menu
+
+CONTEXTUAL
+।
+a
+g
+॥
+the
+SYNONYM
+bill of fare
+carte
+bill of fare
+computer menu
+computer menu
+
+#############################################################
+
+PHRASE: i need to add another pizza
+
+CONTEXTUAL
+i hesitated to take another pizza
+i need to add ॥ ॥
+no need someone add another pizza
+i decide to add a pizza
+i would please add another pizza
+SYNONYM
+i require to add another pizza
+iodin require to add another pizza
+unity need to add another pizza pie
+i need to summate another pizza
+1 need to add another pizza pie
+
+#############################################################
+
+PHRASE: show menu
+
+CONTEXTUAL
+cocktail menu
+the menu
+show on
+app menu
+main menu
+SYNONYM
+appearance menu
+appearance menu
+show bill of fare
+show fare
+show computer menu
+
+#############################################################
+
+PHRASE: show the menu please
+
+CONTEXTUAL
+show the match will
+for mom menu please
+show the camera and
+show the room...
+point the way please
+SYNONYM
+show the card please
+show the carte du jour please
+show the bill of fare please
+present the carte please
+testify the fare please
+
+#############################################################
+
+PHRASE: show me the menu
+
+CONTEXTUAL
+show you my menu
+show you his menu
+tell me the...
+show of the video
+get me the map
+SYNONYM
+show maine the carte
+show pine tree state the carte du jour
+show maine the fare
+point me the bill of fare
+designate me the card
+
+#############################################################
+
+PHRASE: what's on the menu
+
+CONTEXTUAL
+we'm on the menu
+what's is the matter
+that's at the menu
+what'll on this menu
+what's up the door
+SYNONYM
+what ' atomic number 16 on the menu
+what ' sulfur on the card
+what ' southward on the menu
+what ' s on the fare
+what ' mho on the menu
+
+#############################################################
+
+PHRASE: i would like the menu
+
+CONTEXTUAL
+they really like the menu
+who would like your menu
+everyone would like one menu
+i would like my movie
+i certainly like the work
+SYNONYM
+ace would wish the menu
+unity would like the carte
+i would like the carte du jour
+iodine would wish the menu
+ace would like the fare
+
+#############################################################
+
+PHRASE: i want the menu
+
+CONTEXTUAL
+i want every woman
+i joined her menu
+5 want a menu
+we want the bed
+i showed her menu
+SYNONYM
+i desire the computer menu
+i require the bill of fare
+unity require the menu
+single want the computer menu
+ace require the menu
+
+#############################################################
+
+PHRASE: tell me the menu
+
+CONTEXTUAL
+tell david the questions
+tell him no menu
+behind me the mystery
+tell them what menu
+gives me the...
+SYNONYM
+recite pine tree state the menu
+tell pine tree state the carte
+severalise pine tree state the menu
+evidence pine tree state the menu
+recite maine the menu
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: where is my order
+
+CONTEXTUAL
+why is my name
+where is your name
+where was my...
+survival is her order
+it is my unknown
+SYNONYM
+where be my order
+where be my ordering
+where is my parliamentary law
+where make up my order
+where is my order
+
+#############################################################
+
+PHRASE: where are the pizzas
+
+CONTEXTUAL
+where in the...
+there are their pizzas
+kate and the pizzas
+here are the identities
+where to the offices
+SYNONYM
+where be the pizzas
+where follow the pizza pie
+where are the pizza
+where constitute the pizzas
+where are the pizza pie
+
+#############################################################
+
+PHRASE: are the pizzas ready
+
+CONTEXTUAL
+and the pizzas...
+all the pizzas why
+are the ages and
+are you kids ready
+are like pizzas who
+SYNONYM
+represent the pizza ready
+are the pizza pie quick
+are the pizza pie quick
+be the pizza ready
+are the pizza quick
+
+#############################################################
+
+PHRASE: when will the order arrive
+
+CONTEXTUAL
+how will an order arrive
+when will my truth arrive
+when in the order be
+or will you order arrive
+when will national order begin
+SYNONYM
+when testament the order arrive
+when will the lodge arrive
+when leave the gild arrive
+when leave the society arrive
+when testament the order arrive
+
+#############################################################
+
+PHRASE: when will it arrive
+
+CONTEXTUAL
+these will then arrive
+soon would it arrive
+when will y [UNK]
+i will it you
+when will he mean
+SYNONYM
+when testament it arrive
+when bequeath information technology arrive
+when will information technology arrive
+when leave it arrive
+when volition information technology arrive
+
+#############################################################
+
+PHRASE: when will the pizzas arrive
+
+CONTEXTUAL
+when will the baby go
+when companies supply pizzas arrive
+nor will the pizzas call
+i make the pizzas arrive
+what will the answers arrive
+SYNONYM
+when will the pizza pie arrive
+when leave the pizzas arrive
+when volition the pizza arrive
+when will the pizzas arrive
+when leave the pizzas arrive
+
+#############################################################
+
+PHRASE: where is it
+
+CONTEXTUAL
+where would it
+where were it
+why is it
+what is it
+where is and
+SYNONYM
+where equal it
+where is it
+where is information technology
+where cost it
+where personify it
+
+#############################################################
+
+PHRASE: give me updates
+
+CONTEXTUAL
+give me ॥
+email me updates
+give them updates
+give you updates
+give me ॥
+SYNONYM
+reach me updates
+move over me updates
+give pine tree state updates
+afford me updates
+give me update
+
+#############################################################
+
+PHRASE: what's the status
+
+CONTEXTUAL
+here's the thing
+n'is the status
+what'l who status
+what'p the to
+she's the peace
+SYNONYM
+what ' s the condition
+what ' s the condition
+what ' s the position
+what ' s the position
+what ' s the position
+
+#############################################################
+
+PHRASE: are they coming
+
+CONTEXTUAL
+are them coming
+are they so
+are... coming
+were they coming
+are he coming
+SYNONYM
+represent they coming
+be they coming
+represent they coming
+are they coming
+are they come
+
+#############################################################
+
+PHRASE: when will they arrive
+
+CONTEXTUAL
+when would she arrive
+when does thomas arrive
+or will they happen
+when will we start
+when will he...
+SYNONYM
+when leave they go far
+when bequeath they arrive
+when will they arrive
+when leave they arrive
+when will they go far
+
+#############################################################
+
+PHRASE: where is my order?
+
+CONTEXTUAL
+how about my order?
+where got your order?
+where is her car?
+and is this order?
+why were my order?
+SYNONYM
+where is my order?
+where follow my order?
+where is my gild?
+where follow my parliamentary procedure?
+where is my order?
+
+#############################################################
+
+PHRASE: where is my order
+
+CONTEXTUAL
+everything is in order
+where has my child
+rebecca is my name
+where is your boy
+here was my order
+SYNONYM
+where be my order
+where represent my order
+where is my decree
+where is my ordering
+where be my fiat
+
+#############################################################
+
+PHRASE: where are the pizzas?
+
+CONTEXTUAL
+where are our cats?
+where was all pizzas?
+where are her children?
+where would the women?
+where like the kids?
+SYNONYM
+where make up the pizzas?
+where are the pizza?
+where be the pizza?
+where are the pizza pie?
+where equal the pizza?
+
+#############################################################
+
+PHRASE: check the status of my order
+
+CONTEXTUAL
+check latest status of my facebook
+check any status of my phone
+check the status of publishing books
+only the name of my order
+check any contents of my order
+SYNONYM
+insure the position of my order
+check the status of my order
+check the condition of my order
+check the condition of my order
+check the condition of my parliamentary law
+
+#############################################################
+
+PHRASE: update me
+
+CONTEXTUAL
+update services
+answer me
+call me
+tell me
+miss me
+SYNONYM
+update maine
+update pine tree state
+update me
+update maine
+update me
+
+#############################################################
+
+PHRASE: when it will arrive?
+
+CONTEXTUAL
+when else will snow?
+when which will be?
+when dawn may arrive?
+when it does change?
+when it may last?
+SYNONYM
+when information technology testament arrive?
+when it leave arrive?
+when information technology will arrive?
+when information technology will arrive?
+when it leave come?
+
+#############################################################
+
+PHRASE: i want update about my order
+
+CONTEXTUAL
+i need details about my order
+they want update about the order
+some want update about their order
+i want update from security order
+they want update about the order
+SYNONYM
+i want update astir my order
+i need update astir my order
+unity want update about my order
+i need update about my edict
+1 want update about my decree
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: cancel my order
+
+CONTEXTUAL
+cancel this order
+follow my order
+gave my order
+awaiting my order
+just my order
+SYNONYM
+cancel my edict
+set off my order
+cancel my order
+cancel my gild
+cancel my order
+
+#############################################################
+
+PHRASE: i want to cancel the order
+
+CONTEXTUAL
+no want so cancel the order
+just want to cancel it order
+just want to cancel the business
+kat hated to cancel the order
+i want him shake the order
+SYNONYM
+unity want to cancel the ordering
+one want to scratch the order
+atomic number 53 want to set off the order
+i need to cancel the order
+iodin want to cancel the rules of order
+
+#############################################################
+
+PHRASE: delete order
+
+CONTEXTUAL
+delete ।
+combat order
+delete...
+mail order
+delete public
+SYNONYM
+delete order
+delete order
+delete lodge
+delete parliamentary procedure
+delete order
+
+#############################################################
+
+PHRASE: cancel
+
+CONTEXTUAL
+from
+i
+[UNK]
+and
+p
+SYNONYM
+natural
+natural
+natural
+natural
+natural
+
+#############################################################
+
+PHRASE: abort mission
+
+CONTEXTUAL
+solo mission
+pilot mission
+fourth mission
+2nd mission
+the mission
+SYNONYM
+abort commission
+abort missionary post
+abort missionary post
+abort mission
+abort missionary station
+
+#############################################################
+
+PHRASE: i changed my mind
+
+CONTEXTUAL
+claire searched my mind
+he changed my tone
+i withdrew my id
+i changed up...
+johnny changed his mind
+SYNONYM
+i changed my brain
+i deepen my mind
+i change my mind
+i changed my mind
+i convert my mind
+
+#############################################################
+
+PHRASE: i don't want pizza anymore
+
+CONTEXTUAL
+still don't like this anymore
+people wouldn't want that anymore
+dad can's want pizza anymore
+i don'n watch sex anymore
+they won't want pizza since
+SYNONYM
+ane don ' t want pizza pie any longer
+i preceptor ' t want pizza pie any longer
+i don ' t require pizza pie any longer
+i father ' t want pizza pie any longer
+one preceptor ' t want pizza pie anymore
+
+#############################################################
+
+PHRASE: i am not hungry anymore
+
+CONTEXTUAL
+i is not human anymore
+i was not hungry and
+we am not hungry yet
+i am almost there anymore
+i am not sleeping so
+SYNONYM
+i am non hungry any longer
+i exist not thirsty anymore
+ace am not thirsty anymore
+iodine am not thirsty anymore
+unity am not hungry any longer
+
+#############################################################
+
+PHRASE: cancel my last order
+
+CONTEXTUAL
+at your last order
+race on last order
+cancel at last minutes
+and my walk order
+got my email order
+SYNONYM
+cancel my last guild
+natural my last monastic order
+cancel my net order
+cancel my last place order
+natural my net order
+
+#############################################################
+
+PHRASE: cancel it
+
+CONTEXTUAL
+cancel ॥
+cancel forever
+make it
+cancel to
+find it
+SYNONYM
+cancel information technology
+cancel information technology
+cancel information technology
+cancel information technology
+cancel information technology
+
+#############################################################
+
+PHRASE: cancel the second order
+
+CONTEXTUAL
+on the second and
+cancel the prayer ।
+history the promotion order
+cancel from second ।
+cancel the wedding for
+SYNONYM
+set off the second holy order
+delete the second ordering
+scrub the second club
+scrub the 2nd order
+strike down the 2nd order
+
+#############################################################
+
+PHRASE: cancel the order from domino's
+
+CONTEXTUAL
+cancel this order from b'lo
+cancel the event for domino't
+cancel the order 3 l'clock
+cancel the game when j's
+cancel her shift to domino's
+SYNONYM
+set off the order from fats domino ' s
+cancel the order from fats domino ' siemens
+cancel the rules of order from fats domino ' reciprocal ohm
+invalidate the order from half mask ' s
+cancel the ordering from half mask ' s
+
+#############################################################
+
+PHRASE: i want to cancel my order, is it too late?
+
+CONTEXTUAL
+soon decided to change my order, is it too big?
+we want or cancel my dinner, is soon too late?
+now want to finish my order, is i this late?
+just want to cancel the date, is it too complicated?
+i want to cancel the flight, is i too noisy?
+SYNONYM
+i want to scrub my lodge, is it overly late?
+i want to cancel my guild, is information technology excessively late?
+i require to cancel my order, is information technology too lately?
+1 want to invalidate my order, is it likewise late?
+i want to cancel my fiat, is information technology also late?
+
+#############################################################
+
+PHRASE: i changed my mind
+
+CONTEXTUAL
+i changed up words
+i missed my spelling
+to shut my mind
+just changed my style
+it removed my mind
+SYNONYM
+i interchange my mind
+i changed my head
+i change my mind
+i change my mind
+i changed my mind
+
+#############################################################
+
+PHRASE: cancel my order
+
+CONTEXTUAL
+cancel the order
+cancel my cancel
+cancel the order
+ignore my order
+ignore my order
+SYNONYM
+invalidate my order
+offset my order
+cancel my order
+cancel my order
+cancel my monastic order
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: change my order
+
+CONTEXTUAL
+change my hand
+change my fate
+change station order
+awaiting my order
+change my name
+SYNONYM
+change my rules of order
+change my order
+alteration my order
+change my order
+change my order
+
+#############################################################
+
+PHRASE: i want to change the order
+
+CONTEXTUAL
+would want to change this order
+i want a change the...
+i have to find the order
+i want to change my job
+i tried to change the...
+SYNONYM
+i desire to change the rules of order
+i require to exchange the order
+single want to change the monastic order
+i want to exchange the club
+atomic number 53 want to vary the order
+
+#############################################################
+
+PHRASE: change order
+
+CONTEXTUAL
+court order
+change from
+change ！
+change ।
+change mean
+SYNONYM
+change ordination
+alteration order
+variety order
+variety order
+alteration order
+
+#############################################################
+
+PHRASE: modify my order
+
+CONTEXTUAL
+following my order
+modify a order
+read my order
+modify priority order
+cancel my order
+SYNONYM
+qualify my order
+modify my guild
+modify my order
+alter my order
+modify my order
+
+#############################################################
+
+PHRASE: i want to modify the order
+
+CONTEXTUAL
+i need to modify his order
+must want to modify his order
+i chose to keep the order
+i want to modify them...
+i want only modify the idea
+SYNONYM
+i desire to change the order
+i desire to modify the fiat
+i require to qualify the order
+i desire to modify the guild
+ace want to change the order
+
+#############################################################
+
+PHRASE: modify order
+
+CONTEXTUAL
+public order
+open order
+presidential order
+presidential order
+modify function
+SYNONYM
+modify society
+modify order
+modify edict
+modify decree
+modify order
+
+#############################################################
+
+PHRASE: change it
+
+CONTEXTUAL
+change within
+love it
+will it
+change [UNK]
+change 。
+SYNONYM
+change information technology
+change information technology
+change information technology
+change information technology
+change information technology
+
+#############################################################
+
+PHRASE: wait i want something else
+
+CONTEXTUAL
+now i want something but
+wait we want something more
+that i want something...
+wait maybe got something else
+wait i find nothing else
+SYNONYM
+wait 1 want something else
+wait 1 want something else
+waiting i want something else
+wait unity need something else
+postponement single want something else
+
+#############################################################
+
+PHRASE: change my order
+
+CONTEXTUAL
+change current order
+change my tongue
+pass my order
+excuse my order
+change my mind
+SYNONYM
+change my parliamentary procedure
+alteration my order
+change my order
+modification my order
+change my society
+
+#############################################################
+
+PHRASE: i forgot a pizza, i would like to add another pizza
+
+CONTEXTUAL
+having forgot a bit, i also like to add the pizza
+i own a pizza, more would like no forget another pizza
+i wanted a pizza, then would like to order another well
+have skipped a page, i would like to add another...
+she forgot a pizza, i would need to add yours ।
+SYNONYM
+single forgot a pizza pie, i would like to add another pizza
+ace forgot a pizza pie, i would like to add another pizza
+i forgot a pizza pie, i would care to add another pizza
+i forgot a pizza pie, i would care to total another pizza
+i forgot a pizza, i would care to add another pizza pie
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: i would like something to drink
+
+CONTEXTUAL
+they would like just to drink
+i would like coffee and drink
+i would add something at drink
+i would actually like to drink
+i feel like something better drink
+SYNONYM
+iodin would like something to drink
+i would like something to drink
+1 would like something to imbibe
+i would care something to drink in
+i would like something to drink
+
+#############################################################
+
+PHRASE: do you have drinks?
+
+CONTEXTUAL
+do not want drinks?
+should we have drinks?
+do girls pack drinks?
+does ye have drinks?
+did you order drinks?
+SYNONYM
+do you experience drinks?
+do you take boozing?
+dress you experience drinks?
+act you have drunkenness?
+suffice you have drinkable?
+
+#############################################################
+
+PHRASE: do you have beer?
+
+CONTEXTUAL
+because you have to?
+now ya have beer?
+do not have fun?
+do somebody have money?
+and you need beer?
+SYNONYM
+make you have beer?
+perform you have beer?
+make you have beer?
+do you have got beer?
+make you have beer?
+
+#############################################################
+
+PHRASE: is there a drink menu?
+
+CONTEXTUAL
+is there another whole menu?
+is more a drink left?
+is there even single menu?
+wore he a drink menu?
+is which a special menu?
+SYNONYM
+is in that respect a swallow menu?
+is in that respect a beverage menu?
+be there a potable menu?
+is in that respect a drink card?
+be there a drinkable menu?
+
+#############################################################
+
+PHRASE: can i order drinks?
+
+CONTEXTUAL
+and i orders drinks?
+can i have this?
+can she order dessert?
+might i handle drinks?
+can i heat pasta?
+SYNONYM
+can i order drink?
+stool i order drinks?
+crapper i order potable?
+can i gild drink?
+can i order of magnitude beverage?
+
+#############################################################
+
+PHRASE: is there something to drink?
+
+CONTEXTUAL
+is there food ta drink?
+seems there something to lose?
+are that something to drink?
+is there something ta see?
+or anything something to drink?
+SYNONYM
+is there something to drink in?
+is thither something to drink?
+is in that location something to drink?
+is on that point something to salute?
+is there something to imbibe?
+
+#############################################################
+
+PHRASE: do you have drinks?
+
+CONTEXTUAL
+do anyone need drinks?
+do you watch others?
+do they order drinks?
+should you handle drinks?
+so you have dad?
+SYNONYM
+serve you have drinks?
+do you receive deglutition?
+coiffure you have got drinks?
+do you have swallow?
+do you birth drinks?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: What is Margherita?
+
+CONTEXTUAL
+why were fire?
+as does she?
+that fucking happening?
+why would she?
+where became life?
+SYNONYM
+What constitute Margherita?
+What is Margherita?
+What is Margherita?
+What is Margherita?
+What exist Margherita?
+
+#############################################################
+
+PHRASE: What is American?
+
+CONTEXTUAL
+what did that?
+what was this?
+grace is his?
+what was everyone?
+dependent on american?
+SYNONYM
+What constitute American?
+What be American?
+What be American?
+What is American?
+What is American?
+
+#############################################################
+
+PHRASE: What's pepperoni with?
+
+CONTEXTUAL
+what'n bad bread?
+what'is this on?
+what'd happened anyway?
+how's his saying?
+there's a sauce?
+SYNONYM
+What ' s pepperoni with?
+What ' s pepperoni with?
+What ' s pepperoni with?
+What ' s pepperoni with?
+What ' s pepperoni with?
+
+#############################################################
+
+PHRASE: What does spicy buffalo has?
+
+CONTEXTUAL
+how did spicy buffalo has?
+what does the sausage has?
+or does my buffalo has?
+what does the buffalo do?
+some magic spicy buffalo has?
+SYNONYM
+What serve spicy bison bison has?
+What fare spicy old world buffalo has?
+What does spicy american buffalo has?
+What cause spicy buffalo has?
+What act spicy american bison has?
+
+#############################################################
+
+PHRASE: What are the ingredient of Veggie?
+
+CONTEXTUAL
+those are the qualities of pepper?
+click on the ingredient ingredients veggie?
+somehow happened some ingredient of veggie?
+where is the ingredient of pepper?
+going over the ingredient or veggie?
+SYNONYM
+What be the element of Veggie?
+What are the fixings of Veg?
+What are the fixings of Veg?
+What represent the ingredient of Veg?
+What be the ingredient of Vegetable?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: what are the Vegan options?
+
+CONTEXTUAL
+thinking of all vegan options?
+there were some vegan options?
+what have you best options?
+what about these next options?
+more about the vegan habits?
+SYNONYM
+what are the Vegan pick?
+what are the Vegan option?
+what are the Vegan options?
+what are the Vegan options?
+what be the Vegan options?
+
+#############################################################
+
+PHRASE: tell me the Vegetarian options?
+
+CONTEXTUAL
+text me the business options?
+taught me the real options?
+tel me the vegetarian truth?
+spare me the vegetarian view?
+tell me the dark ones?
+SYNONYM
+tell me the Vegetarian pick?
+tell maine the Vegetarian options?
+narrate me the Vegetarian choice?
+tell pine tree state the Vegetarian options?
+secern me the Vegetarian options?
+
+#############################################################
+
+PHRASE: is there anything spicy?
+
+CONTEXTUAL
+is there really there?
+seemed there anything coming?
+is either one spicy?
+has he anything spicy?
+probably there anyone spicy?
+SYNONYM
+is in that respect anything spicy?
+be there anything spicy?
+is thither anything spicy?
+be thither anything spicy?
+cost there anything spicy?
+
+#############################################################
+
+PHRASE: is there a vegetarian menu?
+
+CONTEXTUAL
+is he a cocktail menu?
+in there a vegetarian population?
+is there any dinner menu?
+over there the vegetarian menu?
+why there a dinner menu?
+SYNONYM
+is in that respect a vegetarian menu?
+be in that location a vegetarian menu?
+comprise there a vegetarian menu?
+is thither a vegetarian menu?
+be there a vegetarian menu?
+
+#############################################################
+
+PHRASE: which one are vegetarians?
+
+CONTEXTUAL
+which way means vegetarians?
+is one those vegetarians?
+part one of vegetarians?
+these one are yours?
+not one on vegetarians?
+SYNONYM
+which one are vegetarian?
+which one are vegetarian?
+which ane are vegetarians?
+which one are vegetarian?
+which one comprise vegetarians?
+
+#############################################################
+
+
+
+
+------------------------------------------------------------------
+
+
+PHRASE: how much is it for a Pepperoni?
+
+CONTEXTUAL
+for late does it for a pepperoni?
+how good is it a real pepperoni?
+how much is this that made pepperoni?
+how much is that on a friend?
+why long is it against a pepperoni?
+SYNONYM
+how much be it for a Pepperoni?
+how much live information technology for a Pepperoni?
+how much is it for a Pepperoni?
+how much cost information technology for a Pepperoni?
+how much represent it for a Pepperoni?
+
+#############################################################
+
+PHRASE: what is the cost of american?
+
+CONTEXTUAL
+what is between military becoming american?
+what on the point of starvation?
+why is the question being american?
+what is the good one life?
+what if at cost a american?
+SYNONYM
+what be the monetary value of american?
+what is the toll of american?
+what is the monetary value of american?
+what be the price of american?
+what be the monetary value of american?
+
+#############################################################
+
+PHRASE: how much is it for the beer?
+
+CONTEXTUAL
+really thin is it through the beer?
+how much was there... the beer?
+how much is said about the heart?
+how long are needed for the beer?
+how much would it for their patient?
+SYNONYM
+how much is information technology for the beer?
+how much be information technology for the beer?
+how much cost it for the beer?
+how much is information technology for the beer?
+how much be it for the beer?
+
+#############################################################
+
+PHRASE: how much is it for the coca?
+
+CONTEXTUAL
+and short were it for the coca?
+how much could he without the coca?
+how much had it on the customers?
+how much less money for my coca?
+how many is lost for the better?
+SYNONYM
+how much be it for the coca plant?
+how much comprise it for the erythroxylon coca?
+how much is it for the erythroxylon coca?
+how much be information technology for the erythroxylon coca?
+how much is it for the erythroxylon coca?
+
+#############################################################
+
+PHRASE: how much does it cost?
+CONTEXTUAL
+how forever does it last?
+how all must it cost?
+how soon does it need?
+how high does love cost?
+when much will it cost?
+SYNONYM
+how much does it be?
+how much do it cost?
+how much come information technology cost?
+how much does it be?
+how much coiffure it cost?
+
+#############################################################
+

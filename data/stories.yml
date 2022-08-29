@@ -7,1129 +7,1182 @@ stories:
 
 # ---------- MAKE ORDER STEP 1: Store choice ---------- #
 
- - story: User greets and wants to order
-   steps:
-   - intent: greet
-   - action: utter_greet
-   - or:
-     - intent: begin_order
-     - intent: affirm
-   - action: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: Domino's
-   - slot_was_set:
-     - store: Domino's
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - checkpoint: store_choosen
+- story: User greets and wants to order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - or:
+    - intent: begin_order
+    - intent: affirm
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - checkpoint: store_choosen
 
- - story: User wants to order but change store after seeing the menu
-   steps:
-   - intent: begin_order
-   - action: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: Domino's
-   - slot_was_set:
-     - store: Domino's
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - intent: ask_another_menu
-     entities:
-     - store: Pizza Hut
-   - slot_was_set:
-     - store: Pizza Hut
-   - action: action_show_menu
-   - checkpoint: store_choosen
-
+- story: User wants to order but change store after seeing the menu
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_another_menu
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: action_show_menu
+  - checkpoint: store_choosen
 
 # ---------- MAKE ORDER STEP 2: Pizzas choices ---------- #
+- story: User choose 1 pizza
+  steps:
+  - checkpoint: store_choosen
+  - intent: choose_items
+    entities:
+    - new_items: [Margherita]
+  - slot_was_set:
+    - new_items: [Margherita]
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Margherita
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - checkpoint: pizzas_choosen
 
- - story: User choose 1 pizza
-   steps:
-   - checkpoint: store_choosen
-   - intent: choose_pizza
-     entities:
-     - new_pizzas: [Margherita]
-   - slot_was_set:
-     - new_pizzas: [Margherita]
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - checkpoint: pizzas_choosen
+- story: User choose 3 pizzas
+  steps:
+  - checkpoint: store_choosen
+  - intent: choose_items
+    entities:
+    - new_items: [Margherita,Margherita,Pepperoni]
+  - slot_was_set:
+    - new_items: [Margherita,Margherita,Pepperoni]
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Margherita
+      - Margherita
+      - Pepperoni
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - checkpoint: pizzas_choosen
 
- - story: User choose 3 pizzas
-   steps:
-   - checkpoint: store_choosen
-   - intent: choose_pizza
-     entities:
-     - new_pizzas: [Margherita,Margherita,Pepperoni]
-   - slot_was_set:
-     - new_pizzas: [Margherita,Margherita,Pepperoni]
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-       - Margherita
-       - Pepperoni
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - checkpoint: pizzas_choosen
-
- - story: User choose 1 pizza, then adds another 1
-   steps:
-   - checkpoint: store_choosen
-   - intent: choose_pizza
-     entities:
-     - new_pizzas: [Hawaii]
-   - slot_was_set:
-     - new_pizzas: [Hawaii]
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - new_pizzas:
-       - Hawaii
-   - action: action_ask_something_more
-   - intent: choose_pizza
-     entities:
-     - new_pizzas: [Pepperoni]
-   - action: action_fix_pizzas_choice
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - checkpoint: pizzas_choosen
-
+- story: User choose 1 pizza, then adds a drink
+  steps:
+  - checkpoint: store_choosen
+  - intent: choose_items
+    entities:
+    - new_items: [Margherita]
+  - slot_was_set:
+    - new_items: [Margherita]
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Margherita
+  - action: action_ask_something_more
+  - intent: choose_items
+    entities:
+    - new_items: [1 liter coke]
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Margherita
+      - 1 liter coke
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - checkpoint: pizzas_choosen
 
 # # ---------- MAKE ORDER STEP 3: Choose address ---------- #
-
-
- - story: User set delivery address
-   steps:
-   - checkpoint: pizzas_choosen
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: Via Confalonieri 15, Schio
-   - action: utter_ask_time
-   - checkpoint: address_choosen
-
-
-
+- story: User set delivery address
+  steps:
+  - checkpoint: pizzas_choosen
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: Via Confalonieri 15, Schio
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - checkpoint: address_choosen
 
 # # ---------- MAKE ORDER STEP 4: Choose time ---------- #
-
-
- - story: User set delivery time
-   steps:
-   - checkpoint: address_choosen
-   - intent: set_time
-     entities:
-     - time: "20.30"
-   - slot_was_set:
-     - time: "20.30"
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - checkpoint: time_choosen
-
+- story: User set delivery time
+  steps:
+  - checkpoint: address_choosen
+  - intent: set_time
+    entities:
+    - time: "20.30"
+  - slot_was_set:
+    - time: "20.30"
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - checkpoint: time_choosen
 
 # # ---------- MAKE ORDER STEP 5: Set telephone ---------- #
+- story: User set telephone number
+  steps:
+  - checkpoint: time_choosen
+  - intent: set_telephone
+    entities:
+    - time: "3464646446"
+  - slot_was_set:
+    - time: "3464646446"
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - checkpoint: telephone_choosen
 
+# ---------- MAKE ORDER STEP 6: Summary and conclusion ---------- #
+- story: User place the order
+  steps:
+  - checkpoint: telephone_choosen
+  - intent: affirm
+  - action: action_place_order
 
- - story: User set telephone number
-   steps:
-   - checkpoint: time_choosen
-   - intent: set_telephone
-     entities:
-     - time: "3464646446"
-   - slot_was_set:
-     - time: "3464646446"
-   - action: action_summary
-   - checkpoint: telephone_choosen
+# ---------- CANCEL ORDER ---------- #
 
-# # ---------- MAKE ORDER STEP 6: Summary and conclusion ---------- #
+- story: User wants to cancel the (only) order
+  steps:
+  - slot_was_set:
+    - orders:
+      - id: 27DqCl3O9iKGVP01
+        items:
+        - Hawaii
+        msg: 1 Hawaii
+        address: Via da qui, Povo
+        time: '21'
+        telephone: '3121247824'
+        store: Domino's
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: 27DqCl3O9iKGVP01
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - orders: []
 
-
-#  - story: User place the order
-#    steps:
-#    - checkpoint: telephone_choosen
-#    - intent: affirm
-#    - action: action_place_order
-
-
-
-
-
-# # ---------- CANCEL ORDER ---------- #
-
- - story: User wants to cancel the (only) order
-   steps:
-   - slot_was_set:
-     - orders:
-       - id: 27DqCl3O9iKGVP01
-         pizzas:
-         - Hawaii
-         msg: 1 Hawaii
-         address: Via da qui, Povo
-         time: '21'
-         telephone: '3121247824'
-         store: Domino's
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: 27DqCl3O9iKGVP01
-   - intent: affirm
-   - action: action_cancel_order
-   - slot_was_set:
-     - orders: []
-
-
- - story: User wants to cancel the second order
-   steps:
-   - slot_was_set:
-     - orders:
-       - id: A5DqCl3L4iKGVqh1
-         pizzas:
-         - Margherita
-         - Ham and mushrooms
-         - Ham and mushrooms
-         msg: 1 Margherita, 2 Ham and mushrooms
-         address: Via Sommarive 5, Povo
-         time: '21'
-         telephone: '3121245124'
-         store: pizza hut
-       - id: SVuh5dtyDCm4H4o5
-         pizzas:
-         - Pepperoni
-         msg: 1 Pepperoni
-         address: Via Trento 16, Schio
-         time: twentyone
-         telephone: '33343434443443434'
-         store: Domino's
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: A5DqCl3L4iKGVqh1
-   - intent: deny
-   - action: action_cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: SVuh5dtyDCm4H4o5
-   - intent: affirm
-   - action: action_cancel_order
-   - slot_was_set:
-     - orders:
-       - id: A5DqCl3L4iKGVqh1
-         pizzas:
-         - Margherita
-         - Ham and mushrooms
-         - Ham and mushrooms
-         msg: 1 Margherita, 2 Ham and mushrooms
-         address: Via Sommarive 5, Povo
-         time: '21'
-         telephone: '3121245124'
-         store: pizza hut
-
-
+- story: User wants to cancel the second order
+  steps:
+  - slot_was_set:
+    - orders:
+      - id: A5DqCl3L4iKGVqh1
+        items:
+        - Margherita
+        - Ham and mushrooms
+        - Ham and mushrooms
+        msg: 1 Margherita, 2 Ham and mushrooms
+        address: Via Sommarive 5, Povo
+        time: '21'
+        telephone: '3121245124'
+        store: pizza hut
+      - id: SVuh5dtyDCm4H4o5
+        items:
+        - Pepperoni
+        msg: 1 Pepperoni
+        address: Via Trento 16, Schio
+        time: twentyone
+        telephone: '33343434443443434'
+        store: Domino's
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: A5DqCl3L4iKGVqh1
+  - intent: deny
+  - action: action_cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: SVuh5dtyDCm4H4o5
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - orders:
+      - id: A5DqCl3L4iKGVqh1
+        items:
+        - Margherita
+        - Ham and mushrooms
+        - Ham and mushrooms
+        msg: 1 Margherita, 2 Ham and mushrooms
+        address: Via Sommarive 5, Povo
+        time: '21'
+        telephone: '3121245124'
+        store: pizza hut
 
 # -------------------- SAD PATHS -------------------- #
 
-
 # ---------- STEP 1: Store choice ---------- #
-
- - story: User wants to order but nothing's good
-   steps:
-   - intent: begin_order
-   - action: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: Domino's
-   - slot_was_set:
-     - store: Domino's
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - intent: ask_another_menu
-     entities:
-     - store: Pizza Hut
-   - slot_was_set:
-     - store: Pizza Hut
-   - action: action_show_menu
-   - intent: ask_another_menu
-     entities:
-     - store: Papa John's
-   - slot_was_set:
-     - store: Papa John's
-   - action: action_show_menu
-   - intent: goodbye
-   - action: utter_goodbye
-
+- story: User wants to order but nothing's good
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_another_menu
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: action_show_menu
+  - intent: ask_another_menu
+    entities:
+    - store: Papa John's
+  - slot_was_set:
+    - store: Papa John's
+  - action: action_show_menu
+  - intent: goodbye
+  - action: utter_goodbye
 
 # ---------- MAKE ORDER STEP 2: Pizzas choices ---------- #
-
- - story: User choose pizzas not available in the menu
-   steps:
-   - checkpoint: store_choosen
-   - intent: choose_pizza
-     entities:
-     - new_pizzas: [carbonara]
-   - slot_was_set:
-     - new_pizzas: [carbonara]
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - new_pizzas: []
-   - action: action_show_menu
-
+- story: User choose pizzas not available in the menu
+  steps:
+  - checkpoint: store_choosen
+  - intent: choose_items
+    entities:
+    - new_items: [carbonara]
+  - slot_was_set:
+    - new_items: [carbonara]
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - new_items: []
+  - action: action_show_menu
 
 # # ---------- MAKE ORDER STEP 6: Summary and conclusion ---------- #
+- story: User doesn't place the order
+  steps:
+  - checkpoint: telephone_choosen
+  - intent: deny
+  - action: utter_not_placing_order_followup
+  - checkpoint: not_placing_order
 
+- story: User doesn't place the order - cancels it
+  steps:
+  - checkpoint: not_placing_order
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - action: utter_engage
 
- - story: User doesn't place the order
-   steps:
-   - checkpoint: telephone_choosen
-   - intent: deny
-   - action: utter_not_placing_order_followup
-   - checkpoint: not_placing_order
+- story: User doesn't place the order - doesn't cancels it
+  steps:
+  - checkpoint: not_placing_order
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - intent: deny
+  - action: action_cancel_order
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
 
+- story: User doesn't place the order - changes the address
+  steps:
+  - checkpoint: not_placing_order
+  - intent: change_order
+  - action: action_ask_change_order
+  - intent: set_address
+  - action: action_change_order
+  - action: action_set_address
+  - slot_was_set:
+    - address: 44 street, Illinois
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
 
- - story: User doesn't place the order - cancels it
-   steps:
-   - checkpoint: not_placing_order
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - intent: affirm
-   - action: action_cancel_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - action: utter_engage
-
- - story: User doesn't place the order - doesn't cancels it
-   steps:
-   - checkpoint: not_placing_order
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - intent: deny
-   - action: action_cancel_order
-   - action: action_summary
-
-
- - story: User doesn't place the order - changes the address
-   steps:
-   - checkpoint: not_placing_order
-   - intent: change_order
-   - action: action_ask_change_order
-   - intent: set_address
-   - action: action_change_order
-   - action: action_set_address
-   - slot_was_set:
-     - address: 44 street, Illinois
-   - action: action_summary
-
-
- - story: User doesn't place the order - changes the time
-   steps:
-   - checkpoint: not_placing_order
-   - intent: change_order
-   - action: action_ask_change_order
-   - intent: set_time
-     entities:
-     - time: '16'
-   - slot_was_set:
-     - time: '16'
-   - action: action_change_order
-   - action: action_summary
-
-
-#  - story: User doesn't place the order - changes nothing
-#    steps:
-#    - checkpoint: not_placing_order
-#    - intent: change_order
-#    - action: action_ask_change_order
-#    - or:
-#      - intent: affirm
-#      - intent: deny
-#      - intent: stop
-#    - action: action_summary
+- story: User doesn't place the order - changes the time
+  steps:
+  - checkpoint: not_placing_order
+  - intent: change_order
+  - action: action_ask_change_order
+  - intent: set_time
+    entities:
+    - time: '16'
+  - slot_was_set:
+    - time: '16'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
 
 
 
 
-
-
-
-
-
+###############################################################
+###############################################################
 # -------------------- GENERATED STORIES -------------------- #
- - story: interactive_story_1
-   steps:
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - intent: choose_store
-     entities:
-     - store: Domino's
-   - slot_was_set:
-     - store: Domino's
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - intent: ask_another_menu
-     entities:
-     - store: domino's
-   - slot_was_set:
-     - store: domino's
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Margherita
-     - quantity: '1'
-     - new_pizzas: Tuna
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-       - Tuna
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Tuna
-   - action: action_ask_something_more
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Pepperoni
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Pepperoni
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Tuna
-       - Pepperoni
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: 55 street, 68 Chicago
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: sixteen thirty
-   - slot_was_set:
-     - time: sixteen thirty
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '33454215452'
-   - slot_was_set:
-     - telephone: '33454215452'
-   - action: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: mVVwoXRQmDrjla0m
-         pizzas:
-         - Margherita
-         - Tuna
-         - Pepperoni
-         msg: 1 Margherita, 1 Tuna, 1 Pepperoni
-         address: 55 street, 68 Chicago
-         time: sixteen thirty
-         telephone: '33454215452'
-         store: domino's
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: mVVwoXRQmDrjla0m
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: mVVwoXRQmDrjla0m
-   - intent: affirm
-   - action: action_cancel_order
-   - slot_was_set:
-     - orders: []
-   - intent: get_updates
-   - action: action_get_updates
- 
- - story: interactive_story_2
-   steps:
-   - intent: greet
-   - action: utter_greet
-   - intent: affirm
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - intent: choose_store
-     entities:
-     - store: pizza hut
-   - slot_was_set:
-     - store: pizza hut
-   - action: utter_need_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Margherita
-     - quantity: '2'
-     - new_pizzas: Ham and mushrooms
-   - slot_was_set:
-     - quantity: '2'
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-       - Ham and mushrooms
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Ham and mushrooms
-       - Ham and mushrooms
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: Via Sommarive 5, Povo
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: '21'
-   - slot_was_set:
-     - time: '21'
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '3121245124'
-   - slot_was_set:
-     - telephone: '3121245124'
-   - action: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: N51qCCYLkiK3Vqp9
-         pizzas:
-         - Margherita
-         - Ham and mushrooms
-         - Ham and mushrooms
-         msg: 1 Margherita, 2 Ham and mushrooms
-         address: Via Sommarive 5, Povo
-         time: '21'
-         telephone: '3121245124'
-         store: pizza hut
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - intent: choose_store
-     entities:
-     - store: Domino's
-   - slot_was_set:
-     - store: Domino's
-   - action: utter_need_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Pepperoni
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Pepperoni
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Pepperoni
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: Via Trento 16, Schio
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: twentyone
-   - slot_was_set:
-     - time: twentyone
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '33343434443443434'
-   - slot_was_set:
-     - telephone: '33343434443443434'
-   - action: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: N51qCCYLkiK3Vqp9
-         pizzas:
-         - Margherita
-         - Ham and mushrooms
-         - Ham and mushrooms
-         msg: 1 Margherita, 2 Ham and mushrooms
-         address: Via Sommarive 5, Povo
-         time: '21'
-         telephone: '3121245124'
-         store: pizza hut
-       - id: CVuh4UtykCmPeSoE
-         pizzas:
-         - Pepperoni
-         msg: 1 Pepperoni
-         address: Via Trento 16, Schio
-         time: twentyone
-         telephone: '33343434443443434'
-         store: Domino's
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: N51qCCYLkiK3Vqp9
-   - intent: deny
-   - action: action_cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: CVuh4UtykCmPeSoE
-   - intent: deny
-   - action: action_cancel_order
-   - action: action_ask_cancel_order
-   - intent: cancel_order
-   - action: action_ask_cancel_order
+###############################################################
+###############################################################
 
- - story: interactive_story_3
-   steps:
-   - intent: features
-   - action: utter_features
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - intent: choose_store
-     entities:
-     - store: Papa John's
-   - slot_was_set:
-     - store: Papa John's
-   - action: utter_need_menu
-   - intent: affirm
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: 4 Cheese
-     - quantity: '4'
-     - new_pizzas: American
-   - slot_was_set:
-     - quantity: '4'
-   - slot_was_set:
-     - new_pizzas:
-       - 4 Cheese
-       - American
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - 4 Cheese
-       - American
-       - American
-       - American
-       - American
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: Send it to Via di prove 16, Trento
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: '19.30'
-   - slot_was_set:
-     - time: '19.30'
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '3332133124'
-   - slot_was_set:
-     - telephone: '3332133124'
-   - action: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: n5i5jxKYSSQUCAGi
-         pizzas:
-         - 4 Cheese
-         - American
-         - American
-         - American
-         - American
-         msg: 1 4 Cheese, 4 American
-         address: Send it to Via di prove 16, Trento
-         time: '19.30'
-         telephone: '3332133124'
-         store: Papa John's
+- story: interactive story 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Papa John's
+  - slot_was_set:
+    - store: Papa John's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_ingredients
+    entities:
+    - pizza: Spicy Buffalo
+  - slot_was_set:
+    - pizza: Spicy Buffalo
+  - action: action_show_ingredients
+  - intent: ask_price
+  - action: action_show_price
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Spicy Buffalo
+    - quantity: '1'
+    - new_items: carbonara
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Spicy Buffalo
+      - carbonara
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Spicy Buffalo
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_filtered_menu
+    entities:
+    - typology: Vegetarian
+  - slot_was_set:
+    - typology: Vegetarian
+  - action: action_show_filtered_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: 4 Cheese
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - 4 Cheese
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Spicy Buffalo
+      - 4 Cheese
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: the address is street 5, Santa Monica
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '21.00'
+  - slot_was_set:
+    - time: '21.00'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '345345345345'
+  - slot_was_set:
+    - telephone: '345345345345'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - checkpoint: interactive_order_summary
 
 
- - story: interactive_story_4
-   steps:
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - slot_was_set:
-     - current_step: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: pizza hut
-   - slot_was_set:
-     - store: pizza hut
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Margherita
-     - quantity: '1'
-     - new_pizzas: Supreme
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-       - Supreme
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Supreme
-   - slot_was_set:
-     - current_step: ask_something_more
-   - action: action_ask_something_more
-   - intent: affirm
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Chicken
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Chicken
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Supreme
-       - Chicken
-   - slot_was_set:
-     - current_step: ask_something_more
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: at my house in via roma 8
-   - slot_was_set:
-     - current_step: set_time
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: '9'
-   - slot_was_set:
-     - time: '9'
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '334645452124'
-   - slot_was_set:
-     - telephone: '334645452124'
-   - action: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: 81e7vrhUdkTE4kGV
-         pizzas:
-         - Margherita
-         - Supreme
-         - Chicken
-         msg: 1 Margherita, 1 Supreme, 1 Chicken
-         address: at my house in via roma 8pla
-         time: '9'
-         telephone: '334645452124'
-         store: pizza hut
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: get_updates
-   - action: action_get_updates
-   - intent: cancel_order
-   - action: action_ask_cancel_order
-   - slot_was_set:
-     - order_id: 81e7vrhUdkTE4kGV
-   - intent: affirm
-   - action: action_cancel_order
-   - slot_was_set:
-     - orders: []
+- story: interactive story 1 - order submitted
+  steps:
+  - checkpoint: interactive_order_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: ZONJFK8s_J-fGfPU
+        items:
+        - Spicy Buffalo
+        - 4 Cheese
+        msg: 1 Spicy Buffalo, 1 4 Cheese
+        total: 17.0
+        address: the address is street 5, Santa Monica
+        time: '21.00'
+        telephone: '345345345345'
+        store: Papa John's
+
+- story: interactive story 1 - order cancelled
+  steps:
+  - checkpoint: interactive_order_summary
+  - intent: deny
+  - action: utter_not_placing_order_followup
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
 
 
- - story: interactive_story_5
-   steps:
-   - intent: greet
-   - action: utter_greet
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - slot_was_set:
-     - current_step: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: Papa John's
-   - slot_was_set:
-     - store: Papa John's
-   - action: utter_need_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '2'
-     - new_pizzas: Margherita
-   - slot_was_set:
-     - quantity: '2'
-   - slot_was_set:
-     - new_pizzas:
-       - Margherita
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Margherita
-       - Margherita
-   - slot_was_set:
-     - current_step: action_ask_something_more
-   - action: action_ask_something_more
-   - intent: deny
-   - action: action_set_current_step_address
-   - slot_was_set:
-     - current_step: utter_ask_address
-   - action: utter_ask_address
-   - intent: need_explanation
-   - action: action_explain
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: ok, send it to Street 42, New York
-   - slot_was_set:
-     - current_step: utter_ask_time
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: '21'
-   - slot_was_set:
-     - time: '21'
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: need_explanation
-   - action: action_explain
-   - intent: set_telephone
-     entities:
-     - telephone: '334345454'
-   - slot_was_set:
-     - telephone: '334345454'
-   - action: action_summary
-   - slot_was_set:
-     - current_step: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: s_j9mAbVc9b9MES9
-         pizzas:
-         - Margherita
-         - Margherita
-         msg: 2 Margherita
-         address: ok, send it to Street 42, New York
-         time: '21'
-         telephone: '334345454'
-         store: Papa John's
- 
- - story: interactive_story_6
-   steps:
-   - intent: begin_order
-   - action: action_choose_store
-   - slot_was_set:
-     - pizzas: []
-   - slot_was_set:
-     - current_step: action_choose_store
-   - intent: choose_store
-     entities:
-     - store: Papa John's
-   - slot_was_set:
-     - store: Papa John's
-   - action: utter_need_menu
-   - intent: ask_menu
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Tuna
-     - quantity: '1'
-     - new_pizzas: Spicy Buffalo
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Tuna
-       - Spicy Buffalo
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Tuna
-       - Spicy Buffalo
-   - slot_was_set:
-     - current_step: action_ask_something_more
-   - action: action_ask_something_more
-   - intent: affirm
-   - action: action_show_menu
-   - intent: choose_pizza
-     entities:
-     - quantity: '1'
-     - new_pizzas: Pepperoni
-   - slot_was_set:
-     - quantity: '1'
-   - slot_was_set:
-     - new_pizzas:
-       - Pepperoni
-   - action: action_fix_pizzas_choice
-   - slot_was_set:
-     - pizzas:
-       - Tuna
-       - Spicy Buffalo
-       - Pepperoni
-   - slot_was_set:
-     - current_step: action_ask_something_more
-   - action: action_ask_something_more
-   - intent: deny
-   - action: utter_ask_address
-   - intent: set_address
-   - action: action_set_address
-   - slot_was_set:
-     - address: Trento, via trieste 2
-   - slot_was_set:
-     - current_step: utter_ask_time
-   - action: utter_ask_time
-   - intent: set_time
-     entities:
-     - time: '19'
-   - slot_was_set:
-     - time: '19'
-   - action: action_set_current_step_telephone
-   - slot_was_set:
-     - current_step: utter_ask_telephone
-   - action: utter_ask_telephone
-   - intent: set_telephone
-     entities:
-     - telephone: '3746823637894'
-   - slot_was_set:
-     - telephone: '3746823637894'
-   - action: action_summary
-   - slot_was_set:
-     - current_step: action_summary
-   - intent: affirm
-   - action: action_place_order
-   - slot_was_set:
-     - store: null
-   - slot_was_set:
-     - new_pizzas: null
-   - slot_was_set:
-     - pizzas: null
-   - slot_was_set:
-     - quantity: null
-   - slot_was_set:
-     - address: null
-   - slot_was_set:
-     - time: null
-   - slot_was_set:
-     - telephone: null
-   - slot_was_set:
-     - current_step: null
-   - slot_was_set:
-     - orders:
-       - id: 6nA07iiSsv90VNOi
-         pizzas:
-         - Tuna
-         - Spicy Buffalo
-         - Pepperoni
-         msg: 1 Tuna, 1 Spicy Buffalo, 1 Pepperoni
-         address: Trento, via trieste 2
-         time: '19'
-         telephone: '3746823637894'
-         store: Papa John's
-   - intent: affirm
-   - action: utter_engage
- 
+- story: interactive story 1 - order changed and placed
+  steps:
+  - checkpoint: interactive_order_summary
+  - intent: deny
+  - action: utter_not_placing_order_followup
+  - intent: change_order
+  - action: action_ask_change_order
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_drinks
+  - action: action_show_drinks
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: 1 liter coke
+    - quantity: '1'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - 1 liter coke
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Spicy Buffalo
+      - 4 Cheese
+      - 1 liter coke
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: zJjpwOMfegLKVmuq
+        items:
+        - Spicy Buffalo
+        - 4 Cheese
+        - 1 liter coke
+        - Half liter beer
+        msg: 1 Spicy Buffalo, 1 4 Cheese, 1 1 liter coke, 1 Half liter beer
+        total: 22.0
+        address: the address is street 5, Santa Monica
+        time: '21.00'
+        telephone: '345345345345'
+        store: Papa John's
+
+
+- story: collected story 1
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Papa John's
+  - slot_was_set:
+    - store: Papa John's
+  - action: utter_need_menu
+  - intent: ask_another_menu
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: action_show_menu
+  - intent: ask_ingredients
+    entities:
+    - pizza: Meat
+  - slot_was_set:
+    - pizza: Meat
+  - action: action_show_ingredients
+  - intent: nlu_fallback
+  - action: utter_ask_rephrase
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Meat
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Meat
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: ask_filtered_menu
+    entities:
+    - typology: Vegetarian
+  - slot_was_set:
+    - typology: Vegetarian
+  - action: action_show_filtered_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Margherita
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Margherita
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+      - Margherita
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: ask_drinks
+  - action: action_show_drinks
+  - intent: choose_items
+    entities:
+    - quantity: '2'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '2'
+  - slot_was_set:
+    - new_items:
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+      - Margherita
+      - Half liter beer
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: via roma 3
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '8'
+  - slot_was_set:
+    - time: '8'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: need_explanation
+  - action: action_explain
+  - intent: set_telephone
+    entities:
+    - telephone: '3252631564'
+  - slot_was_set:
+    - telephone: '3252631564'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: BmuLvMcA3ekQxEJo
+        items:
+        - Meat
+        - Margherita
+        - Half liter beer
+        - Half liter beer
+        msg: 1 Meat, 1 Margherita, 2 Half liter beer
+        total: 19.0
+        address: via roma 3
+        time: '8'
+        telephone: '3252631564'
+        store: Pizza Hut
+  - intent: change_order
+  - action: action_ask_change_order
+  - slot_was_set:
+    - order_id: BmuLvMcA3ekQxEJo
+  - intent: affirm
+  - action: action_change_order
+  - action: utter_engage
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: BmuLvMcA3ekQxEJo
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - orders: []
+  - action: utter_engage
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: generated story 1
+  steps:
+  - intent: features
+  - action: utter_features
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_filtered_menu
+    entities:
+    - typology: Spicy
+  - slot_was_set:
+    - typology: Spicy
+  - action: action_show_filtered_menu
+  - intent: ask_ingredients
+    entities:
+    - pizza: Mexican
+  - slot_was_set:
+    - pizza: Mexican
+  - action: action_show_ingredients
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Mexican
+    - quantity: '1'
+    - new_items: Supreme
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Mexican
+      - Supreme
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Mexican
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: affirm
+  - action: action_show_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Tuna and onion
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Tuna and onion
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Mexican
+      - Tuna and onion
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: ask_drinks
+  - action: action_show_drinks
+  - intent: ask_price
+    entities:
+    - item: 1 liter water
+  - slot_was_set:
+    - item: 1 liter water
+  - action: action_show_price
+  - intent: ask_price
+    entities:
+    - item: 1 liter coke
+  - slot_was_set:
+    - item: 1 liter coke
+  - action: action_show_price
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: 1 liter coke
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - 1 liter coke
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Mexican
+      - Tuna and onion
+      - 1 liter coke
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: street 45, New York
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '21.00'
+  - slot_was_set:
+    - time: '21.00'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: choose_items
+    entities:
+    - new_items: Pepperoni
+  - slot_was_set:
+    - new_items:
+      - Pepperoni
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Mexican
+      - Tuna and onion
+      - 1 liter coke
+      - Pepperoni
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '33545124'
+  - slot_was_set:
+    - telephone: '33545124'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Pepperoni
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Pepperoni
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Mexican
+      - Tuna and onion
+      - 1 liter coke
+      - Pepperoni
+      - Pepperoni
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: y1zY_iHpOOcH7OTJ
+        items:
+        - Mexican
+        - Tuna and onion
+        - 1 liter coke
+        - Pepperoni
+        - Pepperoni
+        msg: 1 Mexican, 1 Tuna and onion, 1 1 liter coke, 2 Pepperoni
+        total: 32.0
+        address: street 45, New York
+        time: '21.00'
+        telephone: '33545124'
+        store: Domino's
+  - intent: choose_items
+    entities:
+    - quantity: '2'
+    - new_items: Pepperoni
+    - store: Domino's
+    - time: '20'
+  - slot_was_set:
+    - store: Domino's
+  - slot_was_set:
+    - quantity: '2'
+  - slot_was_set:
+    - new_items:
+      - Pepperoni
+  - slot_was_set:
+    - time: '20'
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Pepperoni
+      - Pepperoni
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: via di casa mia 14
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '20'
+  - slot_was_set:
+    - time: '20'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '21354214'
+  - slot_was_set:
+    - telephone: '21354214'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: deny
+  - action: utter_not_placing_order_followup
+  - intent: change_order
+  - action: action_ask_change_order
+  - intent: choose_items
+    entities:
+    - quantity: '2'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '2'
+  - slot_was_set:
+    - new_items:
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Pepperoni
+      - Pepperoni
+      - Half liter beer
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: y1zY_iHpOOcH7OTJ
+        items:
+        - Mexican
+        - Tuna and onion
+        - 1 liter coke
+        - Pepperoni
+        - Pepperoni
+        msg: 1 Mexican, 1 Tuna and onion, 1 1 liter coke, 2 Pepperoni
+        total: 32.0
+        address: street 45, New York
+        time: '21.00'
+        telephone: '33545124'
+        store: Domino's
+      - id: mFPnYPCgq_id3656
+        items:
+        - Pepperoni
+        - Pepperoni
+        - Half liter beer
+        - Half liter beer
+        msg: 2 Pepperoni, 2 Half liter beer
+        total: 18.0
+        address: via di casa mia 14
+        time: '20'
+        telephone: '21354214'
+        store: Domino's
+  - intent: get_updates
+  - action: action_get_updates
+  - intent: change_order
+  - action: action_ask_change_order
+  - slot_was_set:
+    - order_id: y1zY_iHpOOcH7OTJ
+  - intent: affirm
+  - action: action_change_order
+  - action: utter_engage
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: y1zY_iHpOOcH7OTJ
+  - intent: deny
+  - action: action_cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: mFPnYPCgq_id3656
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - orders:
+      - id: y1zY_iHpOOcH7OTJ
+        items:
+        - Mexican
+        - Tuna and onion
+        - 1 liter coke
+        - Pepperoni
+        - Pepperoni
+        msg: 1 Mexican, 1 Tuna and onion, 1 1 liter coke, 2 Pepperoni
+        total: 32.0
+        address: street 45, New York
+        time: '21.00'
+        telephone: '33545124'
+        store: Domino's
+  - intent: get_updates
+  - action: action_get_updates

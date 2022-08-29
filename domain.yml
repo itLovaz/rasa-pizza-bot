@@ -32,16 +32,14 @@ intents:
         - order_id
   - get_updates:
       use_entities: true
-  - stop:
-      use_entities: []
   - ask_menu:
       use_entities: []
   - ask_another_menu:
       use_entities: 
         - store
-  - choose_pizza:
+  - choose_items:
       use_entities: 
-        - new_pizzas
+        - new_items
         - quantity
   - set_address:
       use_entities: []
@@ -53,18 +51,29 @@ intents:
         - telephone
   - need_explanation:
       use_entities: []
+  - ask_drinks:
+      use_entities: []
+  - ask_ingredients:
+      use_entities:
+        - pizza
+  - ask_price:
+      use_entities: 
+        - item
+  - ask_filtered_menu:
+      use_entities:
+        - typology
 
 actions:
   - utter_greet
   - utter_goodbye
   - utter_features
-  - utter_function_not_implemented
+  - action_function_not_implemented
   - action_default_fallback
   - action_explain
   - action_choose_store
   - action_show_menu
   - action_ask_something_more
-  - action_fix_pizzas_choice
+  - action_fix_items_choice
   - action_set_address
   - action_summary
   - action_place_order
@@ -75,6 +84,10 @@ actions:
   - action_get_updates
   - action_set_current_step_address
   - action_set_current_step_telephone
+  - action_show_drinks
+  - action_show_ingredients
+  - action_show_price
+  - action_show_filtered_menu
 
 responses:
   utter_function_not_implemented:
@@ -92,13 +105,13 @@ responses:
 
   utter_ask_address_explain:
   - text: I need the address in order to be able to deliver the order
-  - text: I can't send pizzas to you without an address
+  - text: I can't send the order to you without an address
 
   utter_ask_time_explain:
-  - text: Just tell me at which time you want your pizzas to be delivered
+  - text: Just tell me at which time you want your order to be delivered
 
   utter_ask_telephone_explain:
-  - text: I case there will be problems with your order such as missing ingredients or unexpected delay we will contact you. We will not use it for other scopes.
+  - text: I case there will be problems with your order such as missing ingredients or unexpected delay we will contact you. We will not use it for any other scopes.
   - text: We need the telephone number in case we have to comunicate with you, for istance there may be delay with the orders. 
 
   utter_greet:
@@ -155,13 +168,16 @@ responses:
   - text: "{store}'s menu:"
 
   utter_ask_new_pizzas:
-  - text: If you like the choice just tell me the pizzas you want, otherwise you can ask for another menu
-  - text: Do you see something you like? I am ready to take your order or I can show you menus from other shops
-  - text: I hope you found something to order. If not, tell me which store's menu you would like to check
+  - text: If you like the choice just tell me the pizzas you want, otherwise ask me the menu of another store
+  - text: Do you see something you like? I am ready to take your order, otherwise tell me which restaurant menu you want to see
+  - text: I hope you found something to order. If not, tell me which store menu you would like to check
+
+  utter_current_items:
+  - text: "Your order currently containts {items}."
 
   utter_ask_something_more_order_info:
-  - text: "Great! So you want to order {pizzas}. If that's all we can continue, would you like something more?"
-  - text: "Done! Your order contains {pizzas}. Do you need something else?"
+  - text: "Great! So you want to order {items}. If that's all we can continue, would you like something more?"
+  - text: "Done! Your order contains {items}. Do you need something else?"
 
   utter_ask_address:
   - text: "Ok! Where do you want it to be delivered?"
@@ -176,8 +192,8 @@ responses:
   - text: "Great! Please tell me a telephone number to be used in case of problems during delivery"
 
   utter_summary:
-  - text: "Great! So you want to order {pizzas} to be delivered at {time} at the address {address} with telephone number {telephone}. Do you confirm this order from {store}?"
-  - text: "Perfect! {pizzas} are going to be delivered at {time} to the addess {address}. For any problems {store} may contact you at the number {telephone}. Shall we send the order?"
+  - text: "Great! So you want to order {items} to be delivered at {time} at the address {address} with telephone number {telephone}. The total price is {total} euros. Do you confirm this order from {store}?"
+  - text: "Perfect! {items} are going to be delivered at {time} to the addess {address}. For any problems {store} may contact you at the number {telephone}. The total of you order is {total} euros. Shall we send the order?"
 
   utter_place_order:
   - text: "Your order is confirmed! I'm here if you need to make some changes, cancel or need updates on the status of the order!"
@@ -185,8 +201,8 @@ responses:
   - text: "Order sent! You may ask me any changes to be done to your order or status update. If you changed your mind I can also cancel your order"
 
   utter_get_updates:
-  - text: "Your order from {store} containing {pizzas} to be delivered at {time} at the address {address} is {status}."
-  - text: "Your last order of {pizzas} to be delivered at {time} at the address {address} is {status}. You can contact your local {store} for any other needs!"
+  - text: "Your order from {store} containing {items} to be delivered at {time} at the address {address} is {status}."
+  - text: "Your last order of {items} to be delivered at {time} at the address {address} is {status}. You can contact your local {store} for any other needs!"
 
   utter_get_updates_multiple_orders:
   - text: "I found {n_orders} active orders."
@@ -203,7 +219,7 @@ responses:
   - text: "Ok I can modify the order: you can tell me to add pizzas, set a new address, change the delivery time or change the telephone number. What do you want to do?"
 
   utter_ask_change_order:
-  - text: "Do you want to modify your order from {store} containing {pizzas} to be delivered at {time} at the address {address}?"
+  - text: "Do you want to modify your order from {store} containing {items} to be delivered at {time} at the address {address}?"
 
   utter_change_order_done:
   - text: "To modify your order from {store} you need to contact them at the number {store_number}"
@@ -217,7 +233,7 @@ responses:
   - text: "Do you want to stop this order?"
 
   utter_ask_cancel_order:
-  - text: "Do you want to cancel your order from {store} containing {pizzas} to be delivered at {time} at the address {address}?"
+  - text: "Do you want to cancel your order from {store} containing {items} to be delivered at {time} at the address {address}?"
 
   utter_ask_cancel_order_multiple_orders:
   - text: "I found {n_orders} active orders."
@@ -235,21 +251,49 @@ responses:
   utter_cancel_order_not_doable:
   - text: "I'm sorry but the order is {status} therefore it cannot be cancel. You may try to call {store} to ask them directly, you can contact them at the number {store_number}"
 
+  utter_missing_something:
+  - text: "I'm missing some information to process the order"
+
   utter_engage:
   - text: "I'm here if you need something!"
+
+  utter_show_drink:
+  - text: "Here is the list of drinks available:"
+  - text: "Available drinks:"
+
+  utter_show_ingredients:
+  - text: "{pizza} is made with {ingredients}"
+  - text: "{pizza} ingredients are {ingredients}"
+
+  utter_show_ingredients_no_pizza:
+  - text: "{pizza} is not available at {store}"
+
+  utter_show_price:
+  - text: "{item} costs {price} euros"
+  - text: "{item} comes with a price of {price} euros"
+
+  utter_show_price_no_item:
+  - text: "{item} is not available at {store}"
+
+  utter_show_filtered_menu:
+  - text: "Here is the list of {typology} options:"
+  - text: "These are the {typology} pizzas available:"
 
 
 entities:
   - store
   - quantity
-  - pizzas
-  - new_pizzas
+  - items
+  - new_items
   - address
   - time
   - telephone
   - orders
   - order_id
   - current_step
+  - pizza
+  - item
+  - typology
 
 slots:
   store:
@@ -264,12 +308,12 @@ slots:
     type: float
     min_value: 1.0
     max_value: 10.0
-  pizzas:
+  items:
     initial_value: null
     auto_fill: false
     influence_conversation: true
     type: list
-  new_pizzas:
+  new_items:
     initial_value: null
     auto_fill: true
     influence_conversation: true
@@ -302,5 +346,20 @@ slots:
   current_step:
     initial_value: null
     auto_fill: false
+    influence_conversation: false
+    type: text
+  pizza:
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+    type: text
+  item:
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+    type: text
+  typology:
+    initial_value: null
+    auto_fill: true
     influence_conversation: false
     type: text
