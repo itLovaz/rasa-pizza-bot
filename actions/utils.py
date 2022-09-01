@@ -8,7 +8,7 @@ TYPE_SPICY = "Spicy"
 
 
 # print out messages
-is_debug = True
+is_debug = False
 def debug(msg):
     if is_debug:
         print('#############')

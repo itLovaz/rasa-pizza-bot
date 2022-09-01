@@ -6,12 +6,12 @@ pipeline:
 - name: SpacyTokenizer
 - name: SpacyFeaturizer
 - name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
 - name: DIETClassifier
-  epochs: 100
+  epochs: 200
   number_of_transformer_layers: 3
   constrain_similarities: true
 - name: EntitySynonymMapper
-- name: LexicalSyntacticFeaturizer
 - name: FallbackClassifier
   threshold: 0.55
 policies:
@@ -22,6 +22,5 @@ policies:
   core_fallback_action_name: "action_default_fallback"
   enable_fallback_prediction: True
 - name: TEDPolicy
-#  max_history: 75
   evaluate_every_number_of_epochs: 3
-  epochs: 12
+  epochs: 15

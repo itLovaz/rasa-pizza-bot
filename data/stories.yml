@@ -627,181 +627,6 @@ stories:
         store: Papa John's
 
 
-- story: collected story 1
-  steps:
-  - intent: begin_order
-  - action: action_choose_store
-  - slot_was_set:
-    - items: []
-  - slot_was_set:
-    - current_step: action_choose_store
-  - intent: choose_store
-    entities:
-    - store: Papa John's
-  - slot_was_set:
-    - store: Papa John's
-  - action: utter_need_menu
-  - intent: ask_another_menu
-    entities:
-    - store: Pizza Hut
-  - slot_was_set:
-    - store: Pizza Hut
-  - action: action_show_menu
-  - intent: ask_ingredients
-    entities:
-    - pizza: Meat
-  - slot_was_set:
-    - pizza: Meat
-  - action: action_show_ingredients
-  - intent: nlu_fallback
-  - action: utter_ask_rephrase
-  - intent: choose_items
-    entities:
-    - quantity: '1'
-    - new_items: Meat
-  - slot_was_set:
-    - quantity: '1'
-  - slot_was_set:
-    - new_items:
-      - Meat
-  - action: action_fix_items_choice
-  - slot_was_set:
-    - items:
-      - Meat
-  - slot_was_set:
-    - current_step: action_ask_something_more
-  - action: action_ask_something_more
-  - intent: ask_filtered_menu
-    entities:
-    - typology: Vegetarian
-  - slot_was_set:
-    - typology: Vegetarian
-  - action: action_show_filtered_menu
-  - intent: choose_items
-    entities:
-    - quantity: '1'
-    - new_items: Margherita
-  - slot_was_set:
-    - quantity: '1'
-  - slot_was_set:
-    - new_items:
-      - Margherita
-  - action: action_fix_items_choice
-  - slot_was_set:
-    - items:
-      - Meat
-      - Margherita
-  - slot_was_set:
-    - current_step: action_ask_something_more
-  - action: action_ask_something_more
-  - intent: ask_drinks
-  - action: action_show_drinks
-  - intent: choose_items
-    entities:
-    - quantity: '2'
-    - new_items: Half liter beer
-  - slot_was_set:
-    - quantity: '2'
-  - slot_was_set:
-    - new_items:
-      - Half liter beer
-  - action: action_fix_items_choice
-  - slot_was_set:
-    - items:
-      - Meat
-      - Margherita
-      - Half liter beer
-      - Half liter beer
-  - slot_was_set:
-    - current_step: action_ask_something_more
-  - action: action_ask_something_more
-  - intent: deny
-  - action: action_set_current_step_address
-  - slot_was_set:
-    - current_step: utter_ask_address
-  - action: utter_ask_address
-  - intent: set_address
-  - action: action_set_address
-  - slot_was_set:
-    - address: via roma 3
-  - slot_was_set:
-    - current_step: utter_ask_time
-  - action: utter_ask_time
-  - intent: set_time
-    entities:
-    - time: '8'
-  - slot_was_set:
-    - time: '8'
-  - action: action_set_current_step_telephone
-  - slot_was_set:
-    - current_step: utter_ask_telephone
-  - action: utter_ask_telephone
-  - intent: need_explanation
-  - action: action_explain
-  - intent: set_telephone
-    entities:
-    - telephone: '3252631564'
-  - slot_was_set:
-    - telephone: '3252631564'
-  - action: action_summary
-  - slot_was_set:
-    - current_step: action_summary
-  - intent: affirm
-  - action: action_place_order
-  - slot_was_set:
-    - item: null
-  - slot_was_set:
-    - typology: null
-  - slot_was_set:
-    - pizza: null
-  - slot_was_set:
-    - store: null
-  - slot_was_set:
-    - new_items: null
-  - slot_was_set:
-    - items: null
-  - slot_was_set:
-    - quantity: null
-  - slot_was_set:
-    - address: null
-  - slot_was_set:
-    - time: null
-  - slot_was_set:
-    - telephone: null
-  - slot_was_set:
-    - current_step: null
-  - slot_was_set:
-    - orders:
-      - id: BmuLvMcA3ekQxEJo
-        items:
-        - Meat
-        - Margherita
-        - Half liter beer
-        - Half liter beer
-        msg: 1 Meat, 1 Margherita, 2 Half liter beer
-        total: 19.0
-        address: via roma 3
-        time: '8'
-        telephone: '3252631564'
-        store: Pizza Hut
-  - intent: change_order
-  - action: action_ask_change_order
-  - slot_was_set:
-    - order_id: BmuLvMcA3ekQxEJo
-  - intent: affirm
-  - action: action_change_order
-  - action: utter_engage
-  - intent: cancel_order
-  - action: action_ask_cancel_order
-  - slot_was_set:
-    - order_id: BmuLvMcA3ekQxEJo
-  - intent: affirm
-  - action: action_cancel_order
-  - slot_was_set:
-    - orders: []
-  - action: utter_engage
-  - intent: goodbye
-  - action: utter_goodbye
 
 - story: generated story 1
   steps:
@@ -1186,3 +1011,673 @@ stories:
         store: Domino's
   - intent: get_updates
   - action: action_get_updates
+
+
+- story: collected story 1
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Papa John's
+  - slot_was_set:
+    - store: Papa John's
+  - action: utter_need_menu
+  - intent: ask_another_menu
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: action_show_menu
+  - intent: ask_ingredients
+    entities:
+    - pizza: Meat
+  - slot_was_set:
+    - pizza: Meat
+  - action: action_show_ingredients
+  - intent: nlu_fallback
+  - action: utter_ask_rephrase
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Meat
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Meat
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: ask_filtered_menu
+    entities:
+    - typology: Vegetarian
+  - slot_was_set:
+    - typology: Vegetarian
+  - action: action_show_filtered_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Margherita
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Margherita
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+      - Margherita
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: ask_drinks
+  - action: action_show_drinks
+  - intent: choose_items
+    entities:
+    - quantity: '2'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '2'
+  - slot_was_set:
+    - new_items:
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Meat
+      - Margherita
+      - Half liter beer
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: via roma 3
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '8'
+  - slot_was_set:
+    - time: '8'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: need_explanation
+  - action: action_explain
+  - intent: set_telephone
+    entities:
+    - telephone: '3252631564'
+  - slot_was_set:
+    - telephone: '3252631564'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: BmuLvMcA3ekQxEJo
+        items:
+        - Meat
+        - Margherita
+        - Half liter beer
+        - Half liter beer
+        msg: 1 Meat, 1 Margherita, 2 Half liter beer
+        total: 19.0
+        address: via roma 3
+        time: '8'
+        telephone: '3252631564'
+        store: Pizza Hut
+  - intent: change_order
+  - action: action_ask_change_order
+  - slot_was_set:
+    - order_id: BmuLvMcA3ekQxEJo
+  - intent: affirm
+  - action: action_change_order
+  - action: utter_engage
+  - intent: cancel_order
+  - action: action_ask_cancel_order
+  - slot_was_set:
+    - order_id: BmuLvMcA3ekQxEJo
+  - intent: affirm
+  - action: action_cancel_order
+  - slot_was_set:
+    - orders: []
+  - action: utter_engage
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: collected story 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: nlu_fallback
+  - action: utter_ask_rephrase
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: capriccciosa
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - capriccciosa
+  - action: action_fix_items_choice
+  - action: action_show_menu
+  - intent: choose_items
+    entities:
+    - new_items: Ham and mushrooms
+  - slot_was_set:
+    - new_items:
+      - Ham and mushrooms
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Ham and mushrooms
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Ham and mushrooms
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: zugliano, street 14
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '19.30'
+  - slot_was_set:
+    - time: '19.30'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '0245102154'
+  - slot_was_set:
+    - telephone: '0245102154'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: qZrxG3tafOOciynw
+        items:
+        - Ham and mushrooms
+        - Half liter beer
+        msg: 1 Ham and mushrooms, 1 Half liter beer
+        total: 9.5
+        address: zugliano, street 14
+        time: '19.30'
+        telephone: '0245102154'
+        store: Domino's
+
+- story: collected story 3
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_ingredients
+    entities:
+    - pizza: Supreme
+  - slot_was_set:
+    - pizza: Supreme
+  - action: action_show_ingredients
+  - intent: choose_items
+    entities:
+    - new_items: Supreme
+  - slot_was_set:
+    - new_items:
+      - Supreme
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Supreme
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: ask_drinks
+  - action: action_show_drinks
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: 1 liter water
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - 1 liter water
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Supreme
+      - 1 liter water
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: function_not_implemented
+  - action: action_function_not_implemented
+  - intent: affirm
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: street Rome 17
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '20'
+  - slot_was_set:
+    - time: '20'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '32326451235'
+  - slot_was_set:
+    - telephone: '32326451235'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: 9mV8EGVUzEb13G2e
+        items:
+        - Supreme
+        - 1 liter water
+        msg: 1 Supreme, 1 1 liter water
+        total: 11.5
+        address: street Rome 17
+        time: '20'
+        telephone: '32326451235'
+        store: Pizza Hut
+
+
+
+- story: collected story 4
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Domino's
+  - slot_was_set:
+    - store: Domino's
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Veggie
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Veggie
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Veggie
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: street 40, Trento
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '20.30'
+  - slot_was_set:
+    - time: '20.30'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '3245542445'
+  - slot_was_set:
+    - telephone: '3245542445'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: 1ZXcwEstltw1fCRB
+        items:
+        - Veggie
+        msg: 1 Veggie
+        total: 7.0
+        address: street 40, Trento
+        time: '20.30'
+        telephone: '3245542445'
+        store: Domino's
+
+- story: collected story 5
+  steps:
+  - intent: begin_order
+  - action: action_choose_store
+  - slot_was_set:
+    - items: []
+  - slot_was_set:
+    - current_step: action_choose_store
+  - intent: choose_store
+    entities:
+    - store: Pizza Hut
+  - slot_was_set:
+    - store: Pizza Hut
+  - action: utter_need_menu
+  - intent: ask_menu
+  - action: action_show_menu
+  - intent: ask_ingredients
+    entities:
+    - quantity: '1'
+    - pizza: Meat
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - pizza: Meat
+  - action: action_show_ingredients
+  - intent: choose_items
+    entities:
+    - quantity: '1'
+    - new_items: Supreme
+    - quantity: '1'
+    - new_items: Meat
+  - slot_was_set:
+    - quantity: '1'
+  - slot_was_set:
+    - new_items:
+      - Supreme
+      - Meat
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Supreme
+      - Meat
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: choose_items
+    entities:
+    - quantity: '2'
+    - new_items: Half liter beer
+  - slot_was_set:
+    - quantity: '2'
+  - slot_was_set:
+    - new_items:
+      - Half liter beer
+  - action: action_fix_items_choice
+  - slot_was_set:
+    - items:
+      - Supreme
+      - Meat
+      - Half liter beer
+      - Half liter beer
+  - slot_was_set:
+    - current_step: action_ask_something_more
+  - action: action_ask_something_more
+  - intent: deny
+  - action: action_set_current_step_address
+  - slot_was_set:
+    - current_step: utter_ask_address
+  - action: utter_ask_address
+  - intent: set_address
+  - action: action_set_address
+  - slot_was_set:
+    - address: Don street 17
+  - slot_was_set:
+    - current_step: utter_ask_time
+  - action: utter_ask_time
+  - intent: set_time
+    entities:
+    - time: '21.00'
+  - slot_was_set:
+    - time: '21.00'
+  - action: action_set_current_step_telephone
+  - slot_was_set:
+    - current_step: utter_ask_telephone
+  - action: utter_ask_telephone
+  - intent: set_telephone
+    entities:
+    - telephone: '3245623548'
+  - slot_was_set:
+    - telephone: '3245623548'
+  - action: action_summary
+  - slot_was_set:
+    - current_step: action_summary
+  - intent: affirm
+  - action: action_place_order
+  - slot_was_set:
+    - item: null
+  - slot_was_set:
+    - typology: null
+  - slot_was_set:
+    - pizza: null
+  - slot_was_set:
+    - store: null
+  - slot_was_set:
+    - new_items: null
+  - slot_was_set:
+    - items: null
+  - slot_was_set:
+    - quantity: null
+  - slot_was_set:
+    - address: null
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - telephone: null
+  - slot_was_set:
+    - current_step: null
+  - slot_was_set:
+    - orders:
+      - id: 6FiZaEM_hqfZL6yw
+        items:
+        - Supreme
+        - Meat
+        - Half liter beer
+        - Half liter beer
+        msg: 1 Supreme, 1 Meat, 2 Half liter beer
+        total: 22.0
+        address: Don street 17
+        time: '21.00'
+        telephone: '3245623548'
+        store: Pizza Hut
+  - intent: deny
+  - action: utter_goodbye

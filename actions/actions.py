@@ -90,7 +90,6 @@ class ActionChooseStore(Action):
     def name(self) -> Text:
         return "action_choose_store"
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message(response='utter_choose_store_searching')
         stores = self.psh.search()
         if len(stores) == 0:
             dispatcher.utter_message(response='utter_choose_store_found_none')

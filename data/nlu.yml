@@ -25,8 +25,9 @@ nlu:
 
 - intent: out_of_scope
   examples: |
-    - What is 2 + 2?
-    - Who's the US President?
+    - what is 2 + 2?
+    - who's the US President?
+  
 
 
 - intent: need_explanation
@@ -115,6 +116,11 @@ nlu:
     - what can you do
     - how can i order
     - what are you
+    - what are your features?
+    - features
+    - what are your functions?
+    - what's your purpose?
+
 
 - intent: begin_order
   examples: |
@@ -134,6 +140,9 @@ nlu:
 - intent: choose_store
   examples: |
     - [domino's]{"entity": "store", "value": "Domino's"}
+    - [papa john]{"entity": "store", "value": "Papa John's"}
+    - [pizza hut]{"entity": "store", "value": "Pizza Hut"}
+    - [Papa John's](store)
     - let's try [pizza hut]{"entity": "store", "value": "Pizza Hut"}
     - order from [domino's]{"entity": "store", "value": "Domino's"}
     - i want [papa johns]{"entity": "store", "value": "Papa John's"} pizza
@@ -154,6 +163,7 @@ nlu:
     - do you have a menu?
     - is there a menu?
     - which pizzas can I order?
+    - what's on the menu?
 
 - intent: ask_another_menu
   examples: |
@@ -222,33 +232,53 @@ nlu:
 - intent: choose_items
   examples: |
     - i want [one]{"entity":"quantity", "value":"1", "group":"1"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"}
+    - i want [one]{"entity":"quantity", "value":"1", "group":"1"} [hawaii]{"entity":"new_items", "value":"Hawaii", "group":"1"}
     - i want [1]{"entity":"quantity", "value":"1", "group":"1"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"}
+    - i want [1]{"entity":"quantity", "value":"1", "group":"1"} [tuna with onion]{"entity":"new_items", "value":"Tuna and onion", "group":"1"}
     - i want [two]{"entity":"quantity", "value":"2", "group":"1"} [ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"1"}
     - i want [2]{"entity":"quantity", "value":"2", "group":"1"} [ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"1"}
     - i want [three]{"entity":"quantity", "value":"3", "group":"1"} [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"}
     - i want [3]{"entity":"quantity", "value":"3", "group":"1"} [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"}
     - i will get [one]{"entity":"quantity", "value":"1", "group":"1"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"}
+    - i will get [one]{"entity":"quantity", "value":"1", "group":"1"} [cheese]{"entity":"new_items", "value":"4 Cheese", "group":"1"}
     - just [a]{"entity":"quantity", "value":"1", "group":"1"} [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"} please
     - [1]{"entity":"quantity", "value":"1", "group":"1"} [hawaii]{"entity":"new_items", "value":"Hawaii", "group":"1"} thanks
     - [2]{"entity":"quantity", "value":"2", "group":"1"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"} thanks
     - [one]{"entity":"quantity", "value":"1", "group":"1"} [veggie]{"entity":"new_items", "value":"Veggie", "group":"1"}
-    - [2]{"entity":"quantity", "value":"2", "group":"1"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"} thanks
+    - [2]{"entity":"quantity", "value":"2", "group":"1"} [margarita]{"entity":"new_items", "value":"Margherita", "group":"1"} thanks
     - let's try [the]{"entity":"quantity", "value":"1", "group":"1"} [tuna]{"entity":"new_items", "value":"Tuna", "group":"1"} and also add [one]{"entity":"quantity", "value":"1", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"}
+    - let's try [the]{"entity":"quantity", "value":"1", "group":"1"} [mexican]{"entity":"new_items", "value":"Mexican", "group":"1"} and then I want [one]{"entity":"quantity", "value":"1", "group":"2"} [chicken]{"entity":"new_items", "value":"Chicken", "group":"2"} and [two]{"entity":"quantity", "value":"2", "group":"3"} [meats]{"entity":"new_items", "value":"Meat", "group":"3"}
     - [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"}
-    - [margherita]{"entity":"new_items", "value":"Margherita", "group":"1"} and [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"2"}
+    - [tuna]{"entity":"new_items", "value":"Tuna", "group":"1"}
+    - [tuna and onion]{"entity":"new_items", "value":"Tuna and onion", "group":"1"}
+    - [hawaii]{"entity":"new_items", "value":"Hawaii", "group":"1"}
+    - [mexican]{"entity":"new_items", "value":"Mexican", "group":"1"}
+    - [1]{"entity":"quantity", "value":"1", "group":"1"} [american]{"entity":"new_items", "value":"American", "group":"1"}
+    - [four cheese]{"entity":"new_items", "value":"4 Cheese", "group":"1"}
+    - [a]{"entity":"quantity", "value":"1", "group":"1"} [supreme]{"entity":"new_items", "value":"Supreme", "group":"1"} and [the]{"entity":"quantity", "value":"1", "group":"2"} [Spicy Buffalo]{"entity":"new_items", "value":"Spicy Buffalo", "group":"2"}
+    - [meat]{"entity":"new_items", "value":"Meat", "group":"1"} and [chicken]{"entity":"new_items", "value":"Chicken", "group":"2"}
+    - [2]{"entity":"quantity", "value":"2", "group":"1"} [tunas]{"entity":"new_items", "value":"Tuna", "group":"1"}
+    - [2]{"entity":"quantity", "value":"2", "group":"1"} [tuna and onion]{"entity":"new_items", "value":"Tuna and onion", "group":"1"}
+    - [a]{"entity":"quantity", "value":"1", "group":"1"} [veggie]{"entity":"new_items", "value":"Veggie", "group":"1"} and [a]{"entity":"quantity", "value":"1", "group":"2"} [tuna]{"entity":"new_items", "value":"Tuna", "group":"2"}
+    - [margarita]{"entity":"new_items", "value":"Margherita", "group":"1"} and [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"2"}
     - [one]{"entity":"quantity", "value":"1", "group":"1"} [Ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"1"} and [2]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"}
     - [1]{"entity":"quantity", "value":"1", "group":"1"} [Ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"1"} and [2]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"}
-    - [1]{"entity":"quantity", "value":"1", "group":"1"} [Spicy Buffalo]{"entity":"new_items", "value":"Spicy Buffalo", "group":"1"} and [two]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"}
+    - [1]{"entity":"quantity", "value":"1", "group":"1"} [Spicy Buffalo]{"entity":"new_items", "value":"Spicy Buffalo", "group":"1"} and [two]{"entity":"quantity", "value":"2", "group":"2"} [veggie]{"entity":"new_items", "value":"Veggie", "group":"2"}
     - [one]{"entity":"quantity", "value":"1", "group":"1"} [Ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"1"} and [two]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"}
-    - [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"}, [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"} and [Ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"3"}
+    - [pepperoni]{"entity":"new_items", "value":"Pepperoni", "group":"1"}, [margarita]{"entity":"new_items", "value":"Margherita", "group":"2"} and [Ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"3"}
     - yes I want also [one]{"entity":"quantity", "value":"1", "group":"1"} [4 cheese]{"entity":"new_items", "value":"4 Cheese", "group":"1"}
     - yes I want also [1]{"entity":"quantity", "value":"1", "group":"1"} [mexican]{"entity":"new_items", "value":"Mexican", "group":"1"}
     - yeah add [a]{"entity":"quantity", "value":"1", "group":"1"} [hawaii]{"entity":"new_items", "value":"Hawaii", "group":"1"}
-    - maybe I can try the [supreme]{"entity":"new_items", "value":"Supreme", "group":"1"}
+    - yeah add [a]{"entity":"quantity", "value":"1", "group":"1"} [tuna and onion]{"entity":"new_items", "value":"Tuna and onion", "group":"1"}
+    - maybe I can try [the]{"entity":"quantity", "value":"1", "group":"1"} [supreme]{"entity":"new_items", "value":"Supreme", "group":"1"}
     - mom I want [the]{"entity":"quantity", "value":"1", "group":"1"} [supreme]{"entity":"new_items", "value":"Supreme", "group":"1"} I will get [2]{"entity":"quantity", "value":"2", "group":"2"} [tuna and onion]{"entity":"new_items", "value":"Tuna and onion", "group":"2"}
     - make me [an]{"entity":"quantity", "value":"1", "group":"1"} [american]{"entity":"new_items", "value":"American", "group":"1"} 
     - i will get [one]{"entity":"quantity", "value":"1", "group":"1"} [Margherita](new_items)
-    - [chicken]{"entity":"new_items", "value":"chicken", "group":"1"}, [2]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"} and [three]{"entity":"quantity", "value":"3", "group":"3"} [ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"3"}
+    - also [2]{"entity":"quantity", "value":"2", "group":"1"} [americans]{"entity":"new_items", "value":"American", "group":"1"}
+    - [chicken]{"entity":"new_items", "value":"Chicken", "group":"1"}, [2]{"entity":"quantity", "value":"2", "group":"2"} [margherita]{"entity":"new_items", "value":"Margherita", "group":"2"} and [three]{"entity":"quantity", "value":"3", "group":"3"} [ham and mushrooms]{"entity":"new_items", "value":"Ham and mushrooms", "group":"3"}
+    - make me [1]{"entity":"quantity", "value":"1", "group":"1"} [tuna]{"entity":"new_items", "value":"Tuna", "group":"1"}, [2]{"entity":"quantity", "value":"2", "group":"2"} [buffalos]{"entity":"new_items", "value":"Spicy Buffalo", "group":"2"} and [two]{"entity":"quantity", "value":"2", "group":"3"} [chicken]{"entity":"new_items", "value":"Chicken", "group":"3"}
+    - add [a]{"entity":"quantity", "value":"1", "group":"1"} [beer]{"entity":"new_items", "value":"Half liter beer", "group":"1"} too
+    - add [two]{"entity":"quantity", "value":"2", "group":"1"} [beers]{"entity":"new_items", "value":"Half liter beer", "group":"1"} and [a]{"entity":"quantity", "value":"1", "group":"2"} bottle of [coke]{"entity":"new_items", "value":"1 liter coke", "group":"2"}
 
 - lookup: new_items
   examples: |
@@ -278,13 +308,20 @@ nlu:
     - is there a drink menu?
     - can i order drinks?
     - is there something to drink?
+    - what are the beverages
 
 - intent: ask_ingredients
   examples: |
-    - What is [Margherita](pizza)?
-    - What is [American](pizza)?
-    - What does [spicy buffalo]{"entity":"pizza", "value":"Spicy Buffalo"} has?
-    - What are the ingredient of [Veggie](pizza)?
+    - what is [Margherita](pizza)?
+    - what is [American](pizza)?
+    - what does [spicy buffalo]{"entity":"pizza", "value":"Spicy Buffalo"} has?
+    - what are the ingredients of [Veggie](pizza)?
+    - what are the ingredient of [mexican]{"entity":"pizza", "value":"Mexican"}?
+    - what are the ingredients of the [american]{"entity":"pizza", "value":"American"}?
+    - what is on the [chicken]{"entity":"pizza", "value":"Chicken"}
+    - show me the ingredients of [hawaii]{"entity":"pizza", "value":"Hawaii"}
+    - what's on the [four cheese]{"entity":"pizza", "value":"4 Cheese"}?
+    - what is [supreme]{"entity":"pizza", "value":"Supreme"} made with?
 
 - lookup: pizza
   examples: |
@@ -310,7 +347,13 @@ nlu:
     - what are the [Vegan](typology) options?
     - tell me the [vegetarian]{"entity":"typology", "value":"Vegetarian"} options?
     - is there anything [spicy]{"entity":"typology", "value":"Spicy"}?
+    - is there anything [vegan]{"entity":"typology", "value":"Vegan"}?
     - is there a [vegetarian]{"entity":"typology", "value":"Vegetarian"} menu?
+    - which pizzas are [spicy]{"entity":"typology", "value":"Spicy"}?
+    - do you have [vegetarian]{"entity":"typology", "value":"Vegetarian"} options?
+    - do you have [vegan]{"entity":"typology", "value":"Vegan"} options?
+    - show me the [vegetarian]{"entity":"typology", "value":"Vegetarian"} pizzas
+    - show me the [spicy]{"entity":"typology", "value":"Spicy"} pizzas
 
 - lookup: typology
   examples: |
@@ -321,7 +364,17 @@ nlu:
 - intent: ask_price
   examples: |
     - how much is it for a [Pepperoni](item)?
+    - how much is it for a [beer]{"entity":"item", "value":"Half liter beer"}?
+    - how much is it for a [tuna and onion]{"entity":"item", "value":"Tuna and onion"}?
     - what is the cost of [american]{"entity":"item", "value":"American"}?
+    - cost of [margarita]{"entity":"item", "value":"Margherita"}
+    - price of [chicken]{"entity":"item", "value":"Chicken"}
+    - tell me the price of the [spicy buffalo]{"entity":"item", "value":"Spicy Buffalo"}
+    - i want to know the price of the [vegan]{"entity":"item", "value":"Vegan"} pizza
+    - what is the price of [supreme]{"entity":"item", "value":"Supreme"}?
+    - what is the price of [meat]{"entity":"item", "value":"Meat"} pizza?
+    - what is the price of the [beer]{"entity":"item", "value":"Half liter beer"}?
+    - how much is it for a [beer]{"entity":"item", "value":"Half liter beer"}?
     - how much is it for the [beer]{"entity":"item", "value":"Half liter beer"}?
     - how much is it for the [coca]{"entity":"item", "value":"1 liter coke"}?
 
@@ -389,6 +442,7 @@ nlu:
 - synonym: Margherita
   examples: |
     - margherita
+    - margarita
 
 - synonym: Hawaii
   examples: |
@@ -411,6 +465,8 @@ nlu:
     - onion
     - onions
     - tuna and onion
+    - tuna and onions
+    - tunas and onions
 
 - synonym: Mexican
   examples: |
@@ -442,6 +498,7 @@ nlu:
   examples: |
     - 4 cheese
     - cheese
+    - cheesy
 
 - synonym: Veggie
   examples: |
@@ -457,6 +514,7 @@ nlu:
 - synonym: Spicy Buffalo
   examples: |
     - spicy buffalo
+    - spicy buffalos
     - buffalo
     - buffalo spicy
     - hot buffalo
@@ -518,6 +576,19 @@ nlu:
   examples: |
     - nine
 
+- synonym: '19'
+  examples: |
+    - 7 p.m.
+- synonym: '20'
+  examples: |
+    - 8 p.m.
+- synonym: '21'
+  examples: |
+    - 9 p.m.
+- synonym: '22'
+  examples: |
+    - 10 p.m.
+
 
 
 ###############################################################
@@ -540,6 +611,11 @@ nlu:
     - i want to see the menu of other shops
     - i want to see other menus
     - i want a pizza
+    - i want to order a pizza for tonight at 7.30
+    - i want to order from the first restaurant
+    - hi, i want to order a pizza thanks
+    - i want to order a pizza
+    - i would like to order a pizza
 - intent: choose_store
   examples: |
     - [papa john]{"entity": "store", "value": "Papa John's"}
@@ -554,7 +630,8 @@ nlu:
     - [dominos]{"entity": "store", "value": "Domino's"}
     - the last one, [papa john]{"entity": "store", "value": "Papa John's"}'s
     - [domino's]{"entity": "store", "value": "Domino's"}
-    - [dominos]{"entity": "store", "value": "Domino's"}
+    - from [domino's]{"entity": "store", "value": "Domino's"}
+    - from [pizza hut]{"entity": "store", "value": "Pizza Hut"}
 - intent: ask_menu
   examples: |
     - menu
@@ -567,6 +644,8 @@ nlu:
     - i want the menu
     - tell me the menu
     - i need the menu
+    - show me the menu please
+    - i woul like to see the menu
 - intent: ask_another_menu
   examples: |
     - show [domino's]{"entity": "store", "value": "Domino's"} menu
@@ -613,6 +692,15 @@ nlu:
     - no add [another]{"entity": "quantity", "group": "1", "value": "1"} [pepperoni]{"entity": "new_items", "group": "1", "value": "Pepperoni"} please
     - order [2]{"entity": "quantity", "group": "1"} [pepperoni]{"entity": "new_items", "group": "1", "value": "Pepperoni"} from [dominos]{"entity": "store", "value": "Domino's"} and deliver them at [20](time)
     - add [2]{"entity": "quantity", "group": "1"} [beers]{"entity": "new_items", "group": "1", "value": "Half liter beer"}
+    - i want [a]{"entity": "quantity", "group": "1", "value": "1"} [capriccciosa]{"entity": "new_items", "group": "1"}
+    - [ham and mushrooms]{"entity": "new_items", "group": "1", "value": "Ham and mushrooms"}
+    - yes [a]{"entity": "quantity", "group": "1", "value": "1"} blonde [beer]{"entity": "new_items", "group": "1", "value": "Half liter beer"}, small
+    - i want the [supreme]{"entity": "new_items", "group": "1", "value": "Supreme"}
+    - [1]{"entity": "quantity", "group": "1"} [liter of water]{"entity": "new_items", "value": "1 liter water"} thanks
+    - [a]{"entity": "quantity", "group": "1", "value": "1"} [veggie]{"entity": "new_items", "group": "1", "value": "Veggie"}
+    - ok, then i want [a]{"entity": "quantity", "group": "1", "value": "1"} [supreme]{"entity": "new_items", "group": "1", "value": "Supreme"} and [a]{"entity": "quantity", "group": "2", "value": "1"} [meat]{"entity": "new_items", "group": "2", "value": "Meat"}
+    - i would like to order [2]{"entity": "quantity", "group": "1"} [beers]{"entity": "new_items", "group": "1", "value": "Half liter beer"}
+
 - intent: deny
   examples: |
     - no thanks
@@ -629,13 +717,20 @@ nlu:
     - no that's all
     - no thank you
     - no sorry
+    - no nothing more
+    - no that's all thanks
+    - no that's it thanks
+    - no that's good thanks
+    - that's it
 - intent: ask_ingredients
   examples: |
     - what's [spicy buffalo]{"entity": "typology", "value": "Spicy Buffalo"} with?
     - what's [spicy buffalo]{"entity": "pizza", "value": "Spicy Buffalo"} with?
-    - can you tell me the ingredient of a m[eat ]{"entity": "pizza", "value": "Meat"}pizza?
+    - can you tell me the ingredient of a [meat]{"entity": "pizza", "value": "Meat"} pizza?
     - what's [mexican]{"entity": "new_items", "value": "Mexican"} with?
     - what's [mexican]{"entity": "pizza", "value": "Mexican"} with?
+    - i would like to know the ingredients of [supreme]{"entity": "pizza", "value": "Supreme"}
+    - i would like to know [the]{"entity": "quantity", "group": "1", "value": "1"} ingredients of [meat]{"entity": "pizza", "group": "1", "value": "Meat"}
 - intent: ask_price
   examples: |
     - how much does it cost?
@@ -652,6 +747,7 @@ nlu:
     - do you have drinks?
     - i want something to drink, show me the menu
     - can i order something to drink?
+    - sorry i want also something to drink
 - intent: set_address
   examples: |
     - 55 street, 68 Chicago
@@ -674,6 +770,10 @@ nlu:
     - via roma 3
     - street 45, New York
     - via di casa mia 14
+    - zugliano, street 14
+    - street Rome 17
+    - street 40, Trento
+    - Don street 17
 - intent: set_time
   examples: |
     - at [9pm]{"entity": "time", "value": "21.00"}
@@ -693,8 +793,10 @@ nlu:
     - at [19.30](time)
     - at [7pm]{"entity": "time", "value": "19"}
     - [8](time)
+    - if i orderer for [19.30](time) that's the time
+    - at [20](time) thanks
+    - at [half past 8]{"entity": "time", "value": "20.30"}
     - at [9pm]{"entity": "time", "value": "21.00"}
-    - [20](time)
 - intent: set_telephone
   examples: |
     - [33454215452](telephone)
@@ -714,6 +816,10 @@ nlu:
     - [3252631564](telephone)
     - [33545124](telephone)
     - [21354214](telephone)
+    - [0245102154](telephone)
+    - [32326451235](telephone)
+    - [3245542445](telephone)
+    - [3245623548](telephone)
 - intent: affirm
   examples: |
     - yes
@@ -726,6 +832,11 @@ nlu:
     - send the order
     - yes send
     - yes another pizza
+    - great, send the order
+    - thanks
+    - confirm
+    - yes i confirm
+    - i confirm
 - intent: get_updates
   examples: |
     - where is my order?
@@ -773,6 +884,7 @@ nlu:
     - find me the closest one
     - i want a custom pizza
     - can i make a custom pizza?
+    - are there any cakes?
 - intent: change_order
   examples: |
     - change it
@@ -787,6 +899,8 @@ nlu:
     - i want it now
     - as soon as possible
     - i want that one
+    - the first one
+    - i know which pizza
 - intent: goodbye
   examples: |
     - great, thanks!
@@ -818,6 +932,7 @@ nlu:
     - one
     - another
     - an
+    - the
 - synonym: Pepperoni
   examples: |
     - pepperoni
@@ -835,6 +950,7 @@ nlu:
 - synonym: Meat
   examples: |
     - meat
+    - eat
     - eat
 - synonym: Spicy Buffalo
   examples: |
@@ -860,10 +976,17 @@ nlu:
   examples: |
     - beer
     - beers
+- synonym: 1 liter water
+  examples: |
+    - liter of water
+    - water
 - synonym: Vegetarian
   examples: |
     - vegetarians
     - vegetarian
+- synonym: Spicy
+  examples: |
+    - spicy
 - synonym: '21.00'
   examples: |
     - 9pm
@@ -873,13 +996,13 @@ nlu:
 - synonym: '20.30'
   examples: |
     - half past eight
+    - half past 8
 - synonym: '19'
   examples: |
     - 7pm
 - synonym: Hawaii
   examples: |
     - hawaii
-
 
 
 ###############################################################

@@ -95,7 +95,7 @@ responses:
   - text: I can't do that at the moment. I will ask my developer to implement a function to satisfy your request.
 
   utter_out_of_scope:
-  - text: Sorry, I can't handle that request.
+  - text: Sorry. I can't handle that request.
 
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
@@ -117,7 +117,7 @@ responses:
   utter_greet:
   - text: Hi! Would you like to order pizza?
   - text: Hello! I am ready to take your order!
-  - text: Hey there! If you want to know what I can do just ask for help!
+  - text: "Hey there! If you want to know what I can do just ask: help!"
 
   utter_goodbye:
   - text: Bye!
@@ -125,22 +125,17 @@ responses:
   - text: Have a nice day!
 
   utter_order:
-  - text: I am ready to take your order. If you want to know what I can do just ask for help
+  - text: "I am ready to take your order. If you want to know what I can do just ask: help"
   - text: I see you are looking to order pizza. Shall we start?
   - text: Pizza bot ready to work. Are you ready to order?
 
   utter_features:
   - text: I am here to help you order pizzas. To begin say I want to order pizza. You can also check for the status of your order or ask to change or cancel it.
 
-  utter_choose_store_searching:
-  - text: Searching the closest shops open now...
-  - text: Looking for the best places...
-  - text: Research in progress...
-
   utter_choose_store_found_none:
   - text: I could not find any shop open now!
   - text: No shops are open now, try again later.
-  - text: No stores found. Try again later 
+  - text: No stores found. Try again later.
 
   utter_choose_store_found_one:
   - text: The only shop open now is {store}, would you like to order from them?
@@ -159,18 +154,18 @@ responses:
   - text: From which one would you like to order?
 
   utter_need_menu:
-  - text: Great! Do you know which pizzas would you like to order? Otherwise ask me to show the menu
-  - text: Perfect! If you need I can provide you a menu, if you already know just tell me the pizzas
+  - text: Great! If you already know, please tell me the pizzas you want to order, otherwise ask me to show the menu.
+  - text: Perfect! If you need I can provide you a menu, if you already know just tell me the pizzas. 
 
   utter_show_menu_results:
   - text: "This is the menu of {store}:"
   - text: "Pizzas currently availables at {store}:"
-  - text: "{store}'s menu:"
+  - text: "{store} menu:"
 
   utter_ask_new_pizzas:
-  - text: If you like the choice just tell me the pizzas you want, otherwise ask me the menu of another store
-  - text: Do you see something you like? I am ready to take your order, otherwise tell me which restaurant menu you want to see
-  - text: I hope you found something to order. If not, tell me which store menu you would like to check
+  - text: If you like the choice just tell me the pizzas you want, otherwise ask me the menu of another restaurant. You can also ask to tell the ingredients of a pizza.
+  - text: Do you see something you like? Tell me what you want to order, otherwise tell me which restaurant menu you want to see. You can also ask me what are the ingredient of a pizza.
+  - text: If you found something to order, please tell me the pizzas. If not, tell me which store menu you would like to check. You can also ask me what are the ingredient of a pizza.
 
   utter_current_items:
   - text: "Your order currently containts {items}."
@@ -181,15 +176,16 @@ responses:
 
   utter_ask_address:
   - text: "Ok! Where do you want it to be delivered?"
-  - text: "Great! I need an address for delivery"
+  - text: "Great! I need an address for delivery."
 
   utter_ask_time:
   - text: "Done! When would you like it to be delivered?"
-  - text: "Great! What time do you want to eat?"
+  - text: "All set! When should we delivered your order?"
+  - text: "Great! At what time do you want to eat?"
 
   utter_ask_telephone:
-  - text: "Ok! I only need a telephone number for contact purposes"
-  - text: "Great! Please tell me a telephone number to be used in case of problems during delivery"
+  - text: "Ok! I only need a telephone number for contact purposes."
+  - text: "Great! Please tell me a telephone number to be used in case of problems during delivery."
 
   utter_summary:
   - text: "Great! So you want to order {items} to be delivered at {time} at the address {address} with telephone number {telephone}. The total price is {total} euros. Do you confirm this order from {store}?"
@@ -198,7 +194,7 @@ responses:
   utter_place_order:
   - text: "Your order is confirmed! I'm here if you need to make some changes, cancel or need updates on the status of the order!"
   - text: "Order placed correctly! You can now ask for status updates, to change the order or cancel it. Enjoy your meal!"
-  - text: "Order sent! You may ask me any changes to be done to your order or status update. If you changed your mind I can also cancel your order"
+  - text: "Order sent! You may ask me any changes to be done to your order or status update. If you changed your mind I can also cancel your order."
 
   utter_get_updates:
   - text: "Your order from {store} containing {items} to be delivered at {time} at the address {address} is {status}."
@@ -209,7 +205,7 @@ responses:
 
   utter_get_updates_no_orders:
   - text: "I'm sorry but it appears that you have no active orders currently."
-  - text: "I could not find any active order, If you want to make one, just say I want to order"
+  - text: "I could not find any active order, If you want to make one, just say: I want to order."
 
   utter_not_placing_order_followup:
   - text: "I'm sorry to hear that. I can let you make changes or cancel the order. What do you want to do?"
@@ -222,10 +218,10 @@ responses:
   - text: "Do you want to modify your order from {store} containing {items} to be delivered at {time} at the address {address}?"
 
   utter_change_order_done:
-  - text: "To modify your order from {store} you need to contact them at the number {store_number}"
+  - text: "To modify your order from {store} you need to contact them at the number {store_number}."
 
   utter_change_order_not_doing:
-  - text: "Ok, I will not modify your order"
+  - text: "Ok, I will not modify your order."
 
   utter_ask_cancel_current_order:
   - text: "Do you want to cancel the current order?"
@@ -240,19 +236,19 @@ responses:
 
   utter_ask_cancel_order_no_orders:
   - text: "I'm sorry but it appears that you have no active orders currently."
-  - text: "I could not find any active order, If you want to make one, just say I want to order"
+  - text: "I could not find any active order, If you want to make one, just say: I want to order pizza."
 
   utter_cancel_order_done:
   - text: "Your order has been deleted."
 
   utter_cancel_order_not_doing:
-  - text: "Ok, I will not cancel your order"
+  - text: "Ok, I will not cancel your order."
 
   utter_cancel_order_not_doable:
-  - text: "I'm sorry but the order is {status} therefore it cannot be cancel. You may try to call {store} to ask them directly, you can contact them at the number {store_number}"
+  - text: "I'm sorry but the order is {status} therefore it cannot be cancel. You may try to call {store} to ask them directly, you can contact them at the number {store_number}."
 
   utter_missing_something:
-  - text: "I'm missing some information to process the order"
+  - text: "I'm missing some information to process the order."
 
   utter_engage:
   - text: "I'm here if you need something!"
@@ -262,18 +258,18 @@ responses:
   - text: "Available drinks:"
 
   utter_show_ingredients:
-  - text: "{pizza} is made with {ingredients}"
-  - text: "{pizza} ingredients are {ingredients}"
+  - text: "{pizza} is made with {ingredients}."
+  - text: "{pizza} ingredients are {ingredients}."
 
   utter_show_ingredients_no_pizza:
-  - text: "{pizza} is not available at {store}"
+  - text: "{pizza} is not available at {store}."
 
   utter_show_price:
-  - text: "{item} costs {price} euros"
-  - text: "{item} comes with a price of {price} euros"
+  - text: "{item} costs {price} euros."
+  - text: "{item} comes with a price of {price} euros."
 
   utter_show_price_no_item:
-  - text: "{item} is not available at {store}"
+  - text: "{item} is not available at {store}."
 
   utter_show_filtered_menu:
   - text: "Here is the list of {typology} options:"
